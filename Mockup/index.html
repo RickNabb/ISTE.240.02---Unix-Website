@@ -7,6 +7,7 @@
 
     <link type="text/css" href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link type="text/css" href="./assets/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="./assets/scripts/jquery-1.9.1.js"></script>
 
     <style type="text/css">
         @media screen and (max-width: 1980px) {
@@ -62,9 +63,92 @@
             #header {
                 margin-bottom: 50px;
             }
+
+            #main_content {
+                margin-top: 300px;
+            }
+
+            .main_iconLabel {
+                font-size: 80px;
+                min-width: 200px;
+                transition: opacity 0.5s ease-in-out;
+            }
+
+            .icon_background {
+                border-radius: 50%;
+                height: 400px;
+                width: 400px;
+                background-color: #FFF;
+                border: 8px solid #FFF;
+
+                -webkit-transition: all 200ms linear;
+                -moz-transition: all 200ms linear;
+                -o-transition: all 200ms linear;
+                -ms-transition: all 200ms linear;
+                transition: all 200ms linear;
+            }
+
+            .icon_background:hover {
+                border: 8px solid #EEE;
+                -webkit-box-shadow: 0px 2px 2px #DDD;
+                background-color: #FFF;
+            }
+
+            .icon_background * {
+                position: relative;
+                top: 18%;
+                left: 22%;
+            }
+
+            .icon_background:hover div[id*="_icon"] {
+                -webkit-animation: icon_bounce 0.5s ease-in-out;
+            }
+
+            .icon_background:hover p[id*="_label"] {
+                opacity: 1;
+                -webkit-animation: label_anchor 0.5s ease-in-out;
+            }
+
+            .icon_background p[id*="_label"] {
+                opacity: 0;
+            }
+
+            @-webkit-keyframes icon_bounce {
+                0% {
+                    margin-top: 0px;
+                    transform: rotate(0deg);
+                }
+                50% {
+                    margin-top: -20px;
+                    transform: rotate(35deg);
+                }
+                75% {
+                    margin-top: -20px;
+                    transform: rotate(35deg);
+                }
+                100% {
+                    margin-top: 0px;
+                    transform: rotate(0deg);
+                }
+            }
+
+            @-webkit-keyframes label_anchor {
+                0% {
+                    margin-top: 0px;
+                }
+                50% {
+                    margin-top: 20px;
+                }
+                75% {
+                    margin-top: 20px;
+                }
+                100% {
+                    margin-top: 0px;
+                }
+            }
         }
 
-        @media screen and (max-width: 1200px) {
+        @media screen and (max-width: 1640px) {
             #unix_icon {
                 background-image: url(./assets/images/iconmonstr-window-command-icon.png);
                 height: 150px;
@@ -85,9 +169,19 @@
                 width: 150px;
                 background-size: 150px 150px;
             }
+
+            .main_iconLabel {
+                font-size: 60px;
+                min-width: 150px;
+            }
+
+            .icon_background {
+                height: 300px;
+                width: 300px;
+            }
         }
 
-        @media screen and (max-width: 1008px) {
+        @media screen and (max-width: 1100px) {
             #unix_icon {
                 background-image: url(./assets/images/iconmonstr-window-command-icon.png);
                 height: 100px;
@@ -107,6 +201,16 @@
                 height: 100px;
                 width: 100px;
                 background-size: 100px 100px;
+            }
+
+            .main_iconLabel {
+                font-size: 40px;
+                min-width: 100px;
+            }
+
+            .icon_background {
+                height: 200px;
+                width: 200px;
             }
         }
 
@@ -131,8 +235,22 @@
                 width: 200px;
                 background-size: 200px 200px;
             }
+
+            .main_iconLabel {
+                font-size: 40px;
+                min-width: 100px;
+            }
         }
     </style>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            /*$("#icons div").hover(function () {
+                $("#labels span[id*='" + this.id.substr(0, this.id.indexOf("_")) + "_label']").addClass("icon_visible");
+                $("#labels span[id*='" + this.id.substr(0, this.id.indexOf("_")) + "_label']").removeClass("hidden");
+            });*/
+        }
+    </script>
 </head>
 
 <body>
@@ -143,10 +261,29 @@
 
     <div class="separator"></div>
 
-    <div id="content" class="row-fluid">
-        <div id="unix_icon" class="offset2 span1"></div>
-        <div id="history_icon" class="offset2 span1"></div>
-        <div id="about_icon" class="offset2 span1"></div>
+    <div id="main_content" class="row-fluid">
+        <div id="icons" class="row">
+            <div class="span2 offset2">
+                <div class="icon_background">
+                    <div id="unix_icon"></div>
+                    <p class="main_iconLabel" id="unix_label">Unix</p>
+                </div>
+            </div>
+            
+            <div class="span2 offset1">
+                <div class="icon_background">
+                    <div id="history_icon"></div>
+                    <p class="main_iconLabel" id="history_label">History</p>
+                </div>
+            </div>
+
+            <div class="span2 offset1">
+                <div class="icon_background">
+                    <div id="about_icon"></div>
+                    <p class="main_iconLabel" id="about_label">About</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
