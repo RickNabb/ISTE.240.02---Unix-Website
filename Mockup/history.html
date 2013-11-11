@@ -15,11 +15,8 @@
         li {
             list-style: none;
             margin-right: 30px;
+            display: inline;
         }
-		
-		#current {
-
-		}
 
         .clear {
             margin-bottom: 20px;
@@ -29,6 +26,7 @@
         .title {
             font-size: 70px;
             text-align: center;
+            line-height: .75;
         }
 
         .separator {
@@ -42,7 +40,12 @@
         }
 
         #header {
-            margin-bottom: 50px;
+            position: relative;
+            margin: 0 0 40px 0;
+            width: 80%;
+            height: 80px;
+            left: 10%;
+            top: -20px;
         }
 
         .nav_icon {
@@ -68,6 +71,43 @@
         #nav_about_us {
             background-image: url(./assets/images/iconmonstr-user-14-icon.png);
         }
+
+        .left_nav{
+            display: inline-block;
+            float: left;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            left: 0px;
+            width: 40%;
+            top: 50%;
+        }
+
+        .left_nav li{
+            float: left;
+        }
+        .center_nav{
+            display: inline-block;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            width:18%;
+            text-align: center;
+            
+        }
+        .right_nav{
+            display: inline-block;
+            float: right;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            width:  41%; 
+            top: 50%;           
+        }
+
+        .right_nav li{
+            float: right;
+        }
     </style>
 </head>
 
@@ -78,20 +118,20 @@
 ?>
 
     <div class="clear"></div>
-    <div id="header" class="row-fluid">
-	    <div class="offset1 span5" style="width: 320px;">
-            <ul class="nav-pills">
-                <li class=""><a href="index.html"><div class="nav_icon" id="nav_home"></div>Home</a></li>
-                <li><a href="learn.html"><div class="nav_icon" id="nav_learn_unix"></div>Learn Unix</a></li>        
+    <div id="header">
+        <div class="left_nav">
+            <ul>
+                <li class=""><a href="javascript:void(0);"><div class="nav_icon" id="nav_home"></div>Home</a></li>
+                <li><a href="javascript:void(0);"><div class="nav_icon" id="nav_learn_unix"></div>Learn Unix</a></li>        
             </ul>
-	    </div>
-        <div class="span1"><p class="title">Unix</p></div>
-        <div class="span5 offset1" style="width: 340px;">
-            <ul class="nav-pills">
-                <li><a id="current" href="history.html"><div class="nav_icon" id="nav_about_unix"></div>About Unix</a></li>
-                <li><a href="about.html"><div class="nav_icon" id="nav_about_us"></div>About Us</a></li>        
-            </ul>
-	    </div>
+        </div>
+        <div class="center_nav"><p class="title" style="margin: 0; padding: 0;">Learn Unix</p></div>
+        <div class="right_nav">
+            <ul> 
+                <li><a href="javascript:void(0);"><div class="nav_icon" id="nav_about_unix"></div>About Unix</a></li>
+                <li><a href="javascript:void(0);"><div class="nav_icon" id="nav_about_us"></div>About Us</a></li>
+            </ul>     
+        </div>
     </div>
 
 
