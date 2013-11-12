@@ -1,0 +1,88 @@
+#cmd_line {
+		height:175px;
+		position:fixed;
+		background-color:black;
+		width:100%;
+		left:0px;
+		border-bottom:2px solid lightgray;
+		color:white;
+		box-shadow:0px 0px 10px black;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+	}
+	#cmd_line p {
+		margin:0px;
+	}
+	#cmd_line_open {
+		height:100px;
+	}
+	#txt {
+		background-color: black;
+		color:white;
+		bottom:0px;
+		border:none;
+		width:95%;
+		margin-left:5px;
+	}
+	#cmd_line_p_content p {
+		margin:0;
+		line-height:16px;
+	}
+	#cmd_line_p_content {
+		height:140px;
+		overflow:auto;
+		margin-bottom:5px;
+		border-bottom:2px solid lightgray;
+	}
+	#cmd_line_show {
+		background-color:black;
+		border:2px solid lightgray;
+		height:50px;
+		width:50px;
+		position:fixed;
+		border-top:none;
+		right:15px;
+		box-shadow:0px 0px 5px black;
+		border-bottom-left-radius:10px;
+		border-bottom-right-radius:10px;
+		cursor:pointer;
+	}
+	#cmd_line_invisible {
+		top:30px;
+	}
+	#cmd_line_show:hover {
+		background-color:white;
+		box-shadow:0px 0px 10px black;
+	}
+	.invisible {
+		top:-178px;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+	
+	}
+	.shown {
+		top:0px;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+	}
+	.collapsed {
+		top:0px;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+	}
+	.expanded {
+		top:180px;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+	}
+	
