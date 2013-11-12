@@ -18,7 +18,8 @@
                 $("#labels span[id*='" + this.id.substr(0, this.id.indexOf("_")) + "_label']").removeClass("hidden");
             });*/
             $("#console_open").click(function () {
-                $("#console").slideUp();
+                $("#console").slideToggle();
+                
             });
         }
     </script>
@@ -65,7 +66,7 @@
                 </div>
             </a>
             
-            <a href="learn.html">
+            <a href="history.html">
                 <div class="span2 offset1">
                     <div class="icon_background">
                         <div id="history_icon"></div>
@@ -84,6 +85,8 @@
             </a>
         </div>
     </div>
+
+    <!--<div id="console_clear"></div>-->
 
     <div id="console_open" style="cursor:pointer;">Click to pop up the console</div>
 

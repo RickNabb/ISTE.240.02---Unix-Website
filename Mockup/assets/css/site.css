@@ -154,8 +154,8 @@
     #console {
         width: 100%;
         height: 200px;
-        bottom: 0px;
-        position: absolute;
+        bottom: 0;
+        position: relative;
         box-shadow: #EEE 0px -5px 5px;
         background-color: #000;
     }
@@ -188,8 +188,52 @@
     }
 
     #console_open {
-        position:absolute;
+        position:relative;
         bottom: 10px;
+    }
+    #console_clear {
+        height: 300px;
+        display: block;
+    }
+
+    .curPage {
+        cursor: default;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .curPage:hover {
+        color: #000;
+        cursor:default;
+        text-decoration: none;
+    }
+
+    .lh-2 {
+        line-height: 2;
+    }
+
+    .clear200 {
+        display: block;
+        height: 200px;
+        position: relative;
+    }
+    
+    .clear100 {
+        display: block;
+        height: 100px;
+        position: relative;
+    }
+
+    .clear50 {
+        display: block;
+        height: 50px;
+        position: relative;
+    }
+
+    .clear25 {
+        display: block;
+        height: 25px;
+        position: relative;
     }
 }
 

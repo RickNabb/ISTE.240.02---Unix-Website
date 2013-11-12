@@ -112,6 +112,10 @@
         .right_nav li{
             float: right;
         }
+
+        #content ol {
+            margin-left: 10px;
+        }
     </style>
 </head>
 
@@ -120,195 +124,51 @@
     <div id="header">
 	    <div class="left_nav">
             <ul>
-                <li class=""><a href="index.html"><div class="nav_icon" id="nav_home"></div>Home</a></li>
-                <li><a href="learn.html"><div class="nav_icon" id="nav_learn_unix"></div>Learn Unix</a></li>        
+                <li><a href="index.html"><div class="nav_icon" id="nav_home"></div>Home</a></li>
+                <li><a href="#" class="curPage"><div class="nav_icon" id="nav_learn_unix"></div>Learn Unix</a></li>        
             </ul>
 	    </div>
         <div class="center_nav"><p class="title" style="margin: 0; padding: 0;">Learn Unix</p></div>
         <div class="right_nav">
             <ul> 
-                <li><a href="about.html"><div class="nav_icon" id="nav_about_unix"></div>About Unix</a></li>
-                <li><a href="about_us.html"><div class="nav_icon" id="nav_about_us"></div>About Us</a></li>
+                <li><a href="history.html"><div class="nav_icon" id="nav_about_unix"></div>About Unix</a></li>
+                <li><a href="about.html"><div class="nav_icon" id="nav_about_us"></div>About Us</a></li>
             </ul>     
         </div>
     </div>
 
     <div class="separator"></div>
 	
-
     <div id="content" class="row-fluid span10">
 	
 		<div class="pull-left well-large" style="background:#f8f8ff; display:normal;" >
 			<h2>Tutorials</h2>
 			<ol>
-				<li><a href=#>Test</a></li>
-				<li><a href=#>Test2</a></li>
-				<li><a href=#>Test</a></li>
-				<li><a href=#>Test2</a></li>
+				<li><a href="learn/tutorials/beginner.html">Beginner</a></li>
+				<li><a href="learn/tutorials/intermediate.html">Intermediate</a></li>
+				<li><a href="learn/tutorials/advanced.html">Advanced</a></li>
+				<li><a href="learn/tutorials/pro.html">Pro</a></li>
 			</ol>
 				
-			<h2>Quizzes</h2>
+			<h2 style="margin-top: 50px;">Quizzes</h2>
 			<ol>
-				<li><a href=#>Test</a></li>
-				<li><a href=#>Test2</a></li>
-				<li><a href=#>Test</a></li>
-				<li><a href=#>Test2</a></li>
+				<li><a href="learn/quizzes/beginner.html">Beginner</a></li>
+				<li><a href="learn/quizzes/intermediate.html">Intermediate</a></li>
+				<li><a href="learn/quizzes/advanced.html">Advanced</a></li>
+				<li><a href="learn/quizzes/pro.html">Pro</a></li>
 			</ol>
 		</div>
 	
         <div class="span8">
-            <h2>Advanced Linux User Guide <small>For those with more experience</small></h2>
-            <div class="table-responsive">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Command</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>ls</td>
-                            <td>Lorem ipsum</td>
-                        </tr>
-                        <tr>
-                            <td>ls</td>
-                            <td>Lorem ipsum</td>
-                        </tr>
-                        <tr>
-                            <td>ls</td>
-                            <td>Lorem ipsum</td>
-                        </tr>
-                        <tr>
-                            <td>ls</td>
-                            <td>Lorem ipsum</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <h2>Advanced Linux Quiz <small>Test your knowledge</small></h2>
-            <h6>Which command can change the permissions on a file?</h6>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-                        chgper
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                        chaccess
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-                        chmod
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
-                        chper
-                </label>
-            </div>
-
-            <h6>When changing the permissions on a file, ‘a’, ‘u’, ‘g’, and ‘o’ mean (respectively):</h6>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1">
-                        actual, uncommon, group, others
-
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
-                        action, ungroup, group, opposite
-
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="optionsRadios2" id="optionsRadios3" value="option3">
-                        all users, ungroup, group, others
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="optionsRadios2" id="optionsRadios4" value="option4">
-                        all users, owner, group, others
-                </label>
-            </div>
-            <h6>The default mask for most Unix systems is 0022.</h6>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="optionsRadios3" id="optionsRadios1" value="option1">
-                        True
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="optionsRadios3" id="optionsRadios2" value="option2">
-                        False
-                </label>
-            </div>
-
-            
-
-
-
-
-
-The default mask for most Unix systems is 0022.
-True
-False
-What is the proper command to set the command ‘doSomething’ to list the *.txt files of a directory and all subsequent subdirectories?
-set doSomething = ’dir -a -.txt’
-alias doSomething = ‘ls -R | grep .txt’
-set doSomething = ‘ls -R *.txt’
-alias doSomething = ‘dir -a | grep .txt’
-If I wanted to write a file called output.txt from the Unix shell, line-by-line, which command would I use?
-cat > output.txt
-cat < output.txt
-cat stdin > output.txt
-cat stdin < output.txt
-How would I see if my friend, whose username is “buddy1234” is logged into the same Unix system I am by using a search command?
-ls -user ‘buddy1234’
-w | grep buddy1234
-u | match buddy1234
-net -user ‘buddy1234’
-How would you go about writing messages to that friends console window?
-write buddy1234 [tty]
-write buddy1234 [message]
-sendmsg buddy1234
-msg buddy1234 [message]
-What series of commands would search the entire file directory underneath and including the current folder for files with the extension *.txt, print them to a file called ‘allTextFiles.dat’, and then mail the contents of that file to the email address ‘test@example.com’ with a subject of “All Text Files”?
-ls -R *.txt > allTextFiles.dat | mail -s ‘All Text Files’ test@example.com < allTestFiles.dat
-ls -R | grep .txt > allTextFiles.dat; mail -c ‘All Text Files’ test@example.com > allTestFiles.dat
-ls -R | grep .txt < allTextFiles.dat | mail -s ‘All Text Files’ test@example.com > allTestFiles.dat
-ls -R | grep .txt > allTextFiles.dat; mail -s ‘All Text Files’ test@example.com < allTestFiles.dat
-Putting these two symbols next to each other in your command will insert the previous command to the current
-^^
-++
-**
-!!
-What command will tell me which processes are running?
-runprogs
-ps
-progs
-mbs
-Whats one way to print the first line of a text file?
-head -1 file.txt
-hd -first file.txt
-println -1 file.txt
-echo | println -1 file.txt
-How do you unzip a tar.gz file/
-tar -jvef file.tar.gz
-tar -zxvf file.tar.gz
-tar -arb file.tar.gz
-tar -xqpf file.tar.gz
-
+            <p>
+                Swearem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam scelerisque accumsan nisl, a mattis eros vestibulum et. Vestibulum placerat purus bollix nibh aliquam fringilla. Aenean et tortor diam, id tempor asshole. Vivamus sagittis ornare tempor. Nullam lacinia metus vel jizz fuck et consequat turd porttitor. Vestibulum twathole pellentesque jizzmopper. Sed faucibus venenatis accumsan. Quisque ut gravida metus. Nam sed neque magna, in fermentum ligula. Praesent a diam tincidunt odio semper consequat.
+            </p>
+            <p>
+                Phasellus aliquam justo at arcu gravida porttitor. Duis interdum nisi vitae enim rutrum in viverra dui consectetur. Mauris id purus dui. Integer id ante sem. Nullam commodo mollis turpis eu ornare. Integer eu dolor urna. Curabitur sit amet nulla erat. Quisque bugger arcu nisl, ac semper diam. Nunc rhoncus ante enim. Donec at blandit nunc. Phasellus eu lectus augue, cock amet ornare leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam twat eros dui. Curabitur in wee mauris, nec ornare turpis. Morbi porttitor, nisl et posuere dick, nulla orci bastard ante, nec scelerisque leo sem at turpis. Aenean ornare minge eu magna feugiat id poo purus fermentum. Sed leo dolor, aliquam et venenatis vitae, dignissim lobortis justo. Praesent molestie felis bollix odio ultricies cursus. Poo cursus, nisl vitae elementum turd, nibh urna cursus nisi, eget volutpat erat arcu sed cock.
+            </p>
+            <p>
+                Proin pellentesque poo asshole massa scelerisque sodales nec non velit. Vestibulum auctor sagittis scelerisque. Morbi sed lorem et odio sagittis pretium euismod sed augue. Ut non lobortis purus. Integer tempus hendrerit poo feugiat auctor. Motherfucker convallis imperdiet nunc nec feugiat. In hac habitasse platea dictumst. Vestibulum vehicula bibendum arcu, id accumsan tellus fucker nec. Ut jizzmopper dignissim adipiscing. Nullam id magna vel nunc sodales laoreet. Aenean sit amet tellus metus, non mattis dui.
+            </p>
         </div>
     </div>
 </body>

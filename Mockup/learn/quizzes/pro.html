@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Unix Survival Guide</title>
+    <link type="text/css" href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link type="text/css" href="../../assets/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link href="../../assets/css/site.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        * {
+            font-family: 'Oxygen', sans-serif;
+        }
+
+        li {
+            list-style: none;
+            margin-right: 30px;
+            display: inline;
+        }
+		
+		#content li {
+				display:list-item;
+			}
+
+        .clear {
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
+
+        .title {
+            font-size: 70px;
+            text-align: center;
+            line-height: .75;
+        }
+
+        .separator {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            border-top: solid 1px #EEEEEE;
+            border-bottom: solid 1px #DDDDDD;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #header {
+            position: relative;
+            margin: 0 0 40px 0;
+            width: 80%;
+            height: 80px;
+            left: 10%;
+            top: -20px;
+        }
+
+        .nav_icon {
+            display: inline-block;
+            height: 25px;
+            width: 25px;
+            background-size: 25px 25px;
+            margin-right: 10px;
+        }
+
+        #nav_home {
+            background-image: url(../../assets/images/iconmonstr-home-4-icon.png);
+        }
+
+        #nav_learn_unix {
+            background-image: url(../../assets/images/iconmonstr-window-command-icon.png);
+        }
+
+        #nav_about_unix {
+            background-image: url(../../assets/images/iconmonstr-book-17-icon.png);
+        }
+
+        #nav_about_us {
+            background-image: url(../../assets/images/iconmonstr-user-14-icon.png);
+        }
+
+        .left_nav{
+            display: inline-block;
+            float: left;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            left: 0px;
+            width: 40%;
+            top: 50%;
+        }
+
+        .left_nav li{
+            float: left;
+        }
+        .center_nav{
+            display: inline-block;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            width:18%;
+            text-align: center;
+            
+        }
+        .right_nav{
+            display: inline-block;
+            float: right;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            width:  41%; 
+            top: 50%;           
+        }
+
+        .right_nav li{
+            float: right;
+        }
+
+        #content ol {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clear"></div>
+    <div id="header">
+	    <div class="left_nav">
+            <ul>
+                <li class=""><a href="../../index.html"><div class="nav_icon" id="nav_home"></div>Home</a></li>
+                <li><a href="../../learn.html"><div class="nav_icon" id="nav_learn_unix"></div>Learn Unix</a></li>        
+            </ul>
+	    </div>
+        <div class="center_nav"><p class="title" style="margin: 0; padding: 0;">Learn Unix</p></div>
+        <div class="right_nav">
+            <ul> 
+                <li><a href="../../about.html"><div class="nav_icon" id="nav_about_unix"></div>About Unix</a></li>
+                <li><a href="../../about_us.html"><div class="nav_icon" id="nav_about_us"></div>About Us</a></li>
+            </ul>     
+        </div>
+    </div>
+
+    <div class="separator"></div>
+	
+
+    <div id="content" class="row-fluid span10">
+	
+		<div class="pull-left well-large" style="background:#f8f8ff; display:normal;" >
+			<h2>Tutorials</h2>
+			<ol>
+				<li><a href="../tutorials/beginner.html">Beginner</a></li>
+				<li><a href="../tutorials/intermediate.html">Intermediate</a></li>
+				<li><a href="../tutorials/advanced.html">Advanced</a></li>
+				<li><a href="../tutorials/pro.html">Pro</a></li>
+			</ol>
+				
+			<h2 style="margin-top: 50px;">Quizzes</h2>
+			<ol>
+				<li><a href="beginner.html">Beginner</a></li>
+				<li><a href="intermediate.html">Intermediate</a></li>
+				<li><a href="advanced.html">Advanced</a></li>
+				<li><a href="#" class="curPage">Pro</a></li>
+			</ol>
+		</div>
+	
+        <div class="span8">
+            <h2>Pro Unix Quiz <small>Test your knowledge</small></h2>
+            <div class="clear50"></div>
+            <h6>Which command can change the permissions on a file?</h6>
+            <div class="radio">
+	            <label>
+		            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+			            chgper
+	            </label>
+            </div>
+            <div class="radio">
+	            <label>
+		            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+			            chaccess
+	            </label>
+            </div>
+            <div class="radio">
+	            <label>
+		            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+			            chmod
+	            </label>
+            </div>
+            <div class="radio">
+	            <label>
+		            <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+			            chper
+	            </label>
+            </div>
+
+            <div class="clear25"></div>
+
+            <h6>When changing the permissions on a file, ‘a’, ‘u’, ‘g’, and ‘o’ mean (respectively):</h6>
+            <div class="radio">
+	            <label>
+		            <input type="radio" name="optionsRadios2" id="Radio1" value="option1">
+			            actual, uncommon, group, others
+
+	            </label>
+            </div>
+            <div class="radio">
+	            <label>
+		            <input type="radio" name="optionsRadios2" id="Radio2" value="option2">
+			            action, ungroup, group, opposite
+
+	            </label>
+            </div>
+            <div class="radio">
+	            <label>
+		            <input type="radio" name="optionsRadios2" id="Radio3" value="option3">
+			            all users, ungroup, group, others
+	            </label>
+            </div>
+            <div class="radio">
+	            <label>
+		            <input type="radio" name="optionsRadios2" id="Radio4" value="option4">
+			            all users, owner, group, others
+	            </label>
+            </div>
+
+            <div class="clear25"></div>
+
+            <h6>The default mask for most Unix systems is 0022.</h6>
+            <div class="radio">
+	            <label>
+		            <input type="radio" name="optionsRadios3" id="Radio5" value="option1">
+			            True
+	            </label>
+            </div>
+            <div class="radio">
+	            <label>
+		            <input type="radio" name="optionsRadios3" id="Radio6" value="option2">
+			            False
+	            </label>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
