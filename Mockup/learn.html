@@ -45,11 +45,10 @@
 
         #header {
             position: relative;
-            margin: 0 0 40px 0;
+            margin: 0;
             width: 80%;
-            height: 80px;
+            height: 150px;
             left: 10%;
-            top: -20px;
         }
 
         .nav_icon {
@@ -83,7 +82,7 @@
             margin: 0;
             padding: 0;
             left: 0px;
-            width: 40%;
+            width: 25%;
             top: 50%;
         }
 
@@ -105,7 +104,7 @@
             position: relative;
             margin: 0;
             padding: 0;
-            width:  41%; 
+            width:  25%; 
             top: 50%;           
         }
 
@@ -116,11 +115,20 @@
         #content ol {
             margin-left: 10px;
         }
+		
+		@media screen and (max-width: 5000px) {
+			.homeTitle {
+				background-image: url(./assets/images/logo_600.png);
+				max-width: 600px;
+				height: 200px;
+			}
+		}
+    }
     </style>
 </head>
 
 <body>
-    <div class="clear"></div>
+    <!--<div class="clear50"></div>-->
     <div id="header">
 	    <div class="left_nav">
             <ul>
@@ -128,13 +136,13 @@
                 <li><a href="#" class="curPage"><div class="nav_icon" id="nav_learn_unix"></div>Learn Unix</a></li>        
             </ul>
 	    </div>
-        <div class="center_nav"><p class="title" style="margin: 0; padding: 0;">Learn Unix</p></div>
         <div class="right_nav">
             <ul>
 				<li><a href="about.html"><div class="nav_icon" id="nav_about_us"></div>About Us</a></li>			
                 <li><a href="history.html"><div class="nav_icon" id="nav_about_unix"></div>About Unix</a></li>                
             </ul>     
         </div>
+		<div class="homeTitle centerBlock"></div>
     </div>
 
     <div class="separator"></div>
