@@ -338,6 +338,10 @@
         max-width: 600px;
         height: 212px;
     }
+
+    .home_text {
+        margin-top: 200px;
+    }
 }
 
 @media screen and (max-width: 768px) {
