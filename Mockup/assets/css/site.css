@@ -47,9 +47,14 @@
         /*font-size: 100px;
         text-align: center;
         margin-top: 20px;*/
-        background-image: url(../../assets/images/logo.png);
-        height: 212px;
-        max-width: 600px;       
+        background-image: url(../../assets/images/logo_900.png);
+        height: 318px;
+        max-width: 900px;
+        -webkit-transition: all 200ms linear;
+        -moz-transition: all 200ms linear;
+        -o-transition: all 200ms linear;
+        -ms-transition: all 200ms linear;
+        transition: all 200ms linear;    
     }
 
     .home_text {
@@ -293,7 +298,7 @@
     .icon_background {
         height: 300px;
         width: 300px;
-    }
+    }    
 }
 
 @media screen and (max-width: 1100px) {
@@ -326,6 +331,12 @@
     .icon_background {
         height: 200px;
         width: 200px;
+    }
+
+    .homeTitle {
+        background-image: url(../images/logo_600.png);
+        max-width: 600px;
+        height: 212px;
     }
 }
 
