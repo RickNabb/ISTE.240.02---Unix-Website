@@ -29,6 +29,14 @@
         background-size: 200px 200px;
     }
 
+    #icons a div {
+        margin-right: 30px;
+    }
+
+    #icons:last-child > div {
+        margin-right: 0;
+    }
+
     li {
         list-style: none;
         margin-right: 30px;
