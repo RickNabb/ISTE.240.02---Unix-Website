@@ -1,0 +1,105 @@
+@media screen and (max-width: 2980px) {
+
+    .homeTitle {
+        /*font-size: 100px;
+        text-align: center;
+        margin-top: 20px;*/
+        background-image: url(../images/logo_600.png);
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 600px;
+        -webkit-transition: all 200ms linear;
+        -moz-transition: all 200ms linear;
+        -o-transition: all 200ms linear;
+        -ms-transition: all 200ms linear;
+        transition: all 200ms linear;    
+    }
+    #header{
+        position: relative;
+        margin: 0;
+        width: 80%;
+        height: 150px;
+        left: 10%;
+    }
+    .separator {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-top: solid 1px #EEEEEE;
+        border-bottom: solid 1px #DDDDDD;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .nav_icon {
+        display: inline-block;
+        height: 25px;
+        width: 25px;
+        background-size: 25px 25px;
+        margin-right: 10px;
+    }
+
+    .left_nav{
+        display: inline-block;
+        float: left;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        left: 0px;
+        width: 25%;
+        top: 50%;
+    }
+
+    .left_nav li{
+        float: left;
+    }
+    .center_nav{
+        display: inline-block;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width:18%;
+        text-align: center;
+        
+    }
+    .right_nav{
+        display: inline-block;
+        float: right;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width:  25%; 
+        top: 50%;           
+    }
+
+    .right_nav li{
+        float: right;
+    }
+
+    #nav_home {
+        background-image: url(../images/iconmonstr-home-4-icon.png);
+    }
+
+    #nav_learn_unix {
+        background-image: url(../images/iconmonstr-window-command-icon.png);
+    }
+
+    #nav_about_unix {
+        background-image: url(../images/iconmonstr-book-17-icon.png);
+    }
+
+    #nav_about_us {
+        background-image: url(../images/iconmonstr-user-14-icon.png);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .homeTitle {
+        background-image: url(../images/logo_600.png);
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 5px;
+        height: 160px;
+        width: 400px;
+        background-size: 400px 141px;
+    }
+}
