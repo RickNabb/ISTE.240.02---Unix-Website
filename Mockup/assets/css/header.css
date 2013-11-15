@@ -1,13 +1,16 @@
 @media screen and (max-width: 2980px) {
 
-    .homeTitle {
+    .logo {
         /*font-size: 100px;
         text-align: center;
         margin-top: 20px;*/
         background-image: url(../images/logo_600.png);
         background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 5px;
         height: 200px;
         width: 600px;
+
         -webkit-transition: all 200ms linear;
         -moz-transition: all 200ms linear;
         -o-transition: all 200ms linear;
@@ -93,7 +96,7 @@
 }
 
 @media screen and (max-width: 1100px) {
-    .homeTitle {
+    .logo{
         background-image: url(../images/logo_600.png);
         background-repeat: no-repeat;
         margin: auto;
