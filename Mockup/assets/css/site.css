@@ -42,7 +42,6 @@
         margin-right: 0;
     }
 
- 
     #unix {
         background-image: url(../images/iconmonstr-window-command-icon.png);
 
@@ -69,6 +68,7 @@
         border-radius: 50%;
         background-color: rgb(250,250,250);
         border: 8px solid rgb(250,250,250);
+        
 
         -webkit-transition: all 200ms linear;
         -moz-transition: all 200ms linear;
@@ -80,11 +80,13 @@
         .icon_background * {
             position: relative;
             top: 18%;
-            left: 22%;
+            left: 20%;
         }
         
-        .icon_background p[id*="_label"] {
+        .icon_background p{
+
             opacity: 0;
+
         }
         .icon_background:hover{
             opacity: 0.75;
@@ -106,11 +108,11 @@
             border: 8px solid #A66BC5;
         }
 
-        .icon_background:hover div[id*="_icon"] {
+        .icon_background:hover div[class*="icon"] {
             -webkit-animation: icon_bounce 0.5s ease-in-out;
         }
 
-        .icon_background:hover p[id*="_label"] {
+        .icon_background:hover p{
             opacity: 1;
             -webkit-animation: label_anchor 0.5s ease-in-out;
         }
@@ -135,10 +137,10 @@
                 margin-top: 0px;
             }
             50% {
-                margin-top: 20px;
+                margin-top: 30px;
             }
             75% {
-                margin-top: 20px;
+                margin-top: 30px;
             }
             100% {
                 margin-top: 0px;
@@ -220,10 +222,7 @@
         position: relative;
     }
 
-    .centerBlock {
-        margin-left: auto;
-        margin-right: auto;
-    } */
+    */
 }
 
 @media screen and (max-width: 1100px) {

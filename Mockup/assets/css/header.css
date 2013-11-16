@@ -30,8 +30,19 @@
         margin-right: auto;
         border-top: solid 1px #EEEEEE;
         border-bottom: solid 1px #DDDDDD;
-        margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    .centerBlock {
+        margin: auto;
+        width: 50%;
+        height: 200px;
+        min-width: 50%;
+        min-height: 100px;
+    } 
+
+    .centerBlock img{
+        min-height: 100px
     }
     .nav_icon {
         display: inline-block;
@@ -55,15 +66,7 @@
     .left_nav li{
         float: left;
     }
-    .center_nav{
-        display: inline-block;
-        position: relative;
-        margin: 0;
-        padding: 0;
-        width:18%;
-        text-align: center;
-        
-    }
+
     .right_nav{
         display: inline-block;
         float: right;
@@ -95,14 +98,14 @@
     }
 }
 
-@media screen and (max-width: 1100px) {
-    .logo{
-        background-image: url(../images/logo_600.png);
-        background-repeat: no-repeat;
-        margin: auto;
-        margin-top: 5px;
-        height: 160px;
-        width: 400px;
-        background-size: 400px 141px;
+@media screen and (max-width: 1100px) { 
+
+    #header li{
+        font-size: 14px;
+    }
+    
+    .centerBlock {
+        position: relative;
+        top: 35px;
     }
 }
