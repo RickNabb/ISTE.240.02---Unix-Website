@@ -59,8 +59,9 @@
         margin: 0;
         padding: 0;
         left: 0px;
-        width: 25%;
+        width: 315px;
         top: 50%;
+		font-size: 16px;
     }
 
     .left_nav li{
@@ -73,8 +74,9 @@
         position: relative;
         margin: 0;
         padding: 0;
-        width:  25%; 
-        top: 50%;           
+        width:  315px; 
+        top: 50%;  
+        font-size: 16px;		
     }
 
     .right_nav li{
@@ -108,4 +110,14 @@
         position: relative;
         top: 35px;
     }
+	
+	.left_nav {
+		width: 200px;
+		font-size: 12px;
+	}
+	
+	.right_nav {
+		width: 200px;
+		font-size: 12px;
+	}
 }
