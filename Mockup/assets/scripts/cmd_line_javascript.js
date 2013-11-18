@@ -11,7 +11,7 @@ function init() {
     	var value = txtbox.value;
     	if(value.substring(0,3) == "pwd")
     	{
-			document.getElementById('cmd_line_p_content').innerHTML= ("<p> $ "+value+" returned: "+window.location.pathname+"</p>" +document.getElementById("cmd_line_p_content").innerHTML);
+			document.getElementById('cmd_line_p_content').innerHTML= ("<p> >$~ "+value+" </p>"+"<p id=\"tabbed\">"+window.location.pathname+"</p>" +document.getElementById("cmd_line_p_content").innerHTML);
 			localStorage.log= document.getElementById('cmd_line_p_content').innerHTML;
 			txtbox.value='';
 			txtbox.focus();
@@ -19,25 +19,88 @@ function init() {
     	}
     	else if(value.substring(0,3) == "cd ")
     	{
-			document.getElementById('cmd_line_p_content').innerHTML = ("<p> $ " + value+"</p>" + document.getElementById("cmd_line_p_content").innerHTML);
+			document.getElementById('cmd_line_p_content').innerHTML = ("<p> >$~ " + value+"</p>" + document.getElementById("cmd_line_p_content").innerHTML);
 			localStorage.log= document.getElementById('cmd_line_p_content').innerHTML;
     		window.location.replace(value.substring(3) + "");
             txtbox.value='';
             txtbox.focus();
     	}
-    	else if (value.substring(0,2) == "ls")
+        else if(value.substring(0,2) =="cd")
+        {
+            document.getElementById('cmd_line_p_content').innerHTML= ("<p> >$~ "+value+" </p>"+"<p id=\"tabbed\">proper syntax for change directory is cd \<directory_desired\></p>" +document.getElementById("cmd_line_p_content").innerHTML);
+    		localStorage.log= document.getElementById('cmd_line_p_content').innerHTML;
+			txtbox.value='';
+			txtbox.focus();
+        }
+    	else if(value.substring(0,2) == "ls")
     	{
 			var ls= window.location.pathname;
 			var numIndex = ls.lastIndexOf("/");
 			
-			document.getElementById('cmd_line_p_content').innerHTML= ("<p> $ " + value+"  returned: "+ files +"</p>" +document.getElementById("cmd_line_p_content").innerHTML);
+			document.getElementById('cmd_line_p_content').innerHTML= ("<p> >$~ " + value+" </p>"+"<p id=\"tabbed\">"+ files +"</p>" +document.getElementById("cmd_line_p_content").innerHTML);
 			localStorage.log= document.getElementById('cmd_line_p_content').innerHTML;
             txtbox.value='';
             txtbox.focus();
     	}
+        else if(value.substring(0,2) == "wc") 
+        {
+            var stringOfText = document.getElementById('content').innerHTML;
+            var lengthWithSpaces = stringOfText.length;
+            var lengthWithoutSpaces = stringOfText.replace(/ /g,'').length;
+            
+            document.getElementById('cmd_line_p_content').innerHTML= ("<p> >$~ " + value+" </p>"+"<p id=\"tabbed\">Length With Spaces:"+ lengthWithSpaces + " | Length Without Spaces:" +lengthWithoutSpaces+"</p>" +document.getElementById("cmd_line_p_content").innerHTML);
+    		localStorage.log= document.getElementById('cmd_line_p_content').innerHTML;
+            txtbox.value='';
+            txtbox.focus();
+        }
+        else if(value.substring(0,3) == "man")
+        {
+            if(value.substring(4) =="pwd")
+            {
+                document.getElementById('cmd_line_p_content').innerHTML= ("<p> >$~ "+value+" </p>"+"<p id=\"tabbed\">lists the current path from root</p>" +document.getElementById("cmd_line_p_content").innerHTML);
+        		localStorage.log= document.getElementById('cmd_line_p_content').innerHTML;
+    			txtbox.value='';
+    			txtbox.focus();
+            }
+            else if(value.substring(4) == "ls")
+            {
+                document.getElementById('cmd_line_p_content').innerHTML= ("<p> >$~ "+value+" </p>"+"<p id=\"tabbed\">lists the files within your current dr</p>" +document.getElementById("cmd_line_p_content").innerHTML);
+            	localStorage.log= document.getElementById('cmd_line_p_content').innerHTML;
+    			txtbox.value='';
+    			txtbox.focus();
+            }
+            else if(value.substring(4) == "cd")
+            {
+                document.getElementById('cmd_line_p_content').innerHTML= ("<p> >$~ "+value+" </p>"+"<p id=\"tabbed\">changes your current directory within the file structure EX. cd index.php | Changes current page to index.php</p>" +document.getElementById("cmd_line_p_content").innerHTML);
+            	localStorage.log= document.getElementById('cmd_line_p_content').innerHTML;
+    			txtbox.value='';
+    			txtbox.focus();
+            }
+            else if(value.substring(4) == "wc")
+            {
+                document.getElementById('cmd_line_p_content').innerHTML= ("<p> >$~ "+value+" </p>"+"<p id=\"tabbed\">Counts characters (with and without space) and number of words in the main content</p>" +document.getElementById("cmd_line_p_content").innerHTML);
+            	localStorage.log= document.getElementById('cmd_line_p_content').innerHTML;
+    			txtbox.value='';
+    			txtbox.focus();
+            }
+            else
+            {
+                document.getElementById('cmd_line_p_content').innerHTML= ("<p> >$~ "+value+" </p>"+"<p id=\"tabbed\">Command doesn't exist or hasn't been presented with a help description</p>" +document.getElementById("cmd_line_p_content").innerHTML);
+            	localStorage.log= document.getElementById('cmd_line_p_content').innerHTML;
+    			txtbox.value='';
+    			txtbox.focus();
+            }
+        }
+        else if(value.substring(0,4) == "help")
+        {
+            document.getElementById('cmd_line_p_content').innerHTML= ("<p> >$~ "+value+" </p>"+"<p id=\"tabbed\">List of usable Commands: pwd | ls | cd | wc | man | help</p>"+"<p id=\"tabbed\">For more help on each command, type \"man <command_name>\"</p>" +document.getElementById("cmd_line_p_content").innerHTML);
+            localStorage.log= document.getElementById('cmd_line_p_content').innerHTML;
+    		txtbox.value='';
+    		txtbox.focus();
+        }
 		else
 		{
-			document.getElementById('cmd_line_p_content').innerHTML= ("<p> $ Invalid Syntax: " + value + "</p>" +document.getElementById("cmd_line_p_content").innerHTML);
+			document.getElementById('cmd_line_p_content').innerHTML= ("<p> >$~ Invalid Syntax: " + value + "</p>" +document.getElementById("cmd_line_p_content").innerHTML);
 			localStorage.log= document.getElementById('cmd_line_p_content').innerHTML;
 			txtbox.value='';
 			txtbox.focus();
@@ -65,10 +128,12 @@ function init() {
 		{
 			document.getElementById("cmd_line").className="shown";
 			document.getElementById("cmd_line_show").className="expanded";
+            document.getElementById("collapse-div").className="expand-empty";
 		}
 		else if(document.getElementById("cmd_line").className=="shown")
 		{
 			document.getElementById("cmd_line").className="invisible";
 			document.getElementById("cmd_line_show").className="collapsed";
+            document.getElementById("collapse-div").className="collapse-empty"
 		}
 	}
