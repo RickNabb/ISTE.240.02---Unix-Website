@@ -64,41 +64,112 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>ls</td>
-                            <td>Lorem ipsum</td>
+                            <td>cp</td>
+                            <td>Copy files from one directory to another</td>
                         </tr>
                         <tr>
-                            <td>ls</td>
-                            <td>Lorem ipsum</td>
+                            <td>mv</td>
+                            <td>Move or rename files, depending on syntax</td>
                         </tr>
                         <tr>
-                            <td>ls</td>
-                            <td>Lorem ipsum</td>
+                            <td>rm</td>
+                            <td>Permanently delete file</td>
                         </tr>
                         <tr>
-                            <td>ls</td>
-                            <td>Lorem ipsum</td>
+                            <td>rmdir</td>
+                            <td>Permanently delete directory</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="row-fluid">
                 <p class="lh-2" style="margin-top: 25px;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis justo eu velit condimentum, quis fermentum tortor posuere. Vestibulum porttitor adipiscing pharetra. Mauris ut suscipit libero. Fusce varius volutpat erat, vitae porttitor felis luctus mattis. Donec facilisis luctus sagittis. Praesent elementum, massa non aliquam euismod, felis sapien rhoncus est, eget lobortis turpis lacus vel nunc. Praesent massa purus, mollis ut faucibus a, facilisis at metus. Morbi id imperdiet nisi, sit amet faucibus ligula. Sed nulla orci, hendrerit eget hendrerit in, facilisis a nisi. Fusce condimentum vulputate hendrerit. Proin tristique, tortor at interdum venenatis, nisl justo porta magna, id tristique nunc mi nec turpis. Suspendisse aliquet, lectus in porttitor dapibus, nisi eros iaculis nibh, ac ornare libero mauris at metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a nisl magna.
-                </p>               
+					Sometimes you need to copy files from one directory to another. 
+					The 'cp' command accomplishes this task. The syntax is 
+					cp file1 file2. File1 is moved to the location specified in file2.
+					For instance 'cp text.txt stuff/text_files' will move file 
+					'text.txt' in the current directory to folder 'text_files' 
+					in subfolder 'stuff' of the current directory. 
+				</p>               
             </div>
             <div class="well" style="margin-top: 50px;">
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis justo eu velit condimentum, quis fermentum tortor posuere. Vestibulum porttitor adipiscing pharetra. Mauris ut suscipit libero. Fusce varius volutpat erat, vitae porttitor felis luctus mattis. Donec facilisis luctus sagittis. Praesent elementum, massa non aliquam euismod, felis sapien rhoncus est, eget lobortis turpis lacus vel nunc.
-                </p>                
-                <code>$ This is a test</code><br />
-                <code>$ ../This is a test</code><br />
-                <code>$ ls -a This is a test</code><br />
+					Example of <b>cp</b> command with output below
+				</p>                
+                <code>$ ls -1</code><br />
+				<code>$ cp text.txt stuff/text_files</code><br />
+                <code>$ cd text_files </code><br />
+				<code>$ ls -1</code><br />
+                <code>text.txt</code><br />
             </div>
             <div class="row-fluid">
                 <p class="lh-2" style="margin-top: 25px;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis justo eu velit condimentum, quis fermentum tortor posuere. Vestibulum porttitor adipiscing pharetra. Mauris ut suscipit libero. Fusce varius volutpat erat, vitae porttitor felis luctus mattis. Donec facilisis luctus sagittis. Praesent elementum, massa non aliquam euismod, felis sapien rhoncus est, eget lobortis turpis lacus vel nunc. Praesent massa purus, mollis ut faucibus a, facilisis at metus. Morbi id imperdiet nisi, sit amet faucibus ligula. Sed nulla orci, hendrerit eget hendrerit in, facilisis a nisi. Fusce condimentum vulputate hendrerit. Proin tristique, tortor at interdum venenatis, nisl justo porta magna, id tristique nunc mi nec turpis. Suspendisse aliquet, lectus in porttitor dapibus, nisi eros iaculis nibh, ac ornare libero mauris at metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a nisl magna.
-                </p>               
+					Moving a file has a similar syntax. the 'mv file1 file2' moves 
+					the file specified to the location/path indicated. 'mv info.cfg 
+					config' would move info.cfg to subfolder 'config' in the current 
+					directory.  
+				</p>               
+            </div> 
+			<div class="well" style="margin-top: 50px;">
+                <p>
+					Examples of <b>mv</b> command
+				</p>                
+                <code>$ ls -1</code><br />
+				<code>info.cfg</code><br />
+				<code>extra.txt</code><br />
+                <code>$ mv info.cfg config</code><br />
+				<code>$ ls -1</code><br />
+				<code>extra.txt</code><br />
+				<code>$ cd config</code><br />
+				<code>$ ls -1</code><br />
+				<code>info.cfg</code><br />
+            </div>
+			<div class="row-fluid">
+                <p class="lh-2" style="margin-top: 25px;">
+					Another useful feature of mv is that it can rename files. 
+					The command 'mv old_stuff.txt new_stuff.txt' will rename old_stuff.
+					txt to new_stuff.txt. Notice in the command syntax that both files
+					are in the same directory. Assuming that both files are in the 
+					home directory, 'mv ./oldstuff.txt ./new_stuff.txt' would have 
+					the same effect.
+				</p>               
+            </div> 
+			<div class="well" style="margin-top: 50px;">
+                <p>
+					Example of <b>mv</b> command and output
+				</p>                
+                <code>$ ls -1</code><br />
+				<code>info.cfg</code><br />
+				<code>extra.txt</code><br />
+                <code>$ mv info.cfg new_info.cfg</code><br />
+				<code>$ ls -1</code><br />
+				<code>new_info.cfg</code><br />
+				<code>extra.txt</code><br />
+            </div>
+			<div class="row-fluid">
+                <p class="lh-2" style="margin-top: 25px;">
+					If you want to remove files or folders instead of moving them, 
+					you would use the 'rm' and 'rmdir' commands. 'rm' removes the 
+					specified file while 'rmdir' removes the specified folder. Be 
+					careful though: These actions are permanent and are executed 
+					immediately, without any warning prompt.
+				</p>               
+            </div> 
+			<div class="well" style="margin-top: 50px;">
+                <p>
+					Example of <b>rm</b> and <b>rmdir</b> command and output
+				</p>                
+                <code>$ ls -1</code><br />
+				<code>test</code><br />
+				<code>info.cfg</code><br />
+				<code>apple.img</code><br />
+                <code>$ rm info.cfg</code><br />
+				<code>$ ls -1</code><br />
+				<code>test</code><br />
+				<code>apple.img</code><br />
+				<code>$ rmdir test</code><br />
+				<code>$ ls -1</code><br />
+				<code>apple.img</code><br />
             </div>               
         </div>
     </div>
