@@ -32,7 +32,6 @@
     
 
     <div id="content" class="row-fluid span10">
-    
         <div class="pull-left well" >
             <h2>Tutorials</h2>
             <ol>
@@ -54,7 +53,8 @@
 	
         <div class="span8">
             <h2>Intermediate Unix User Guide <small>For those with a bit of experience</small></h2>
-            <div class="table-responsive">
+            <!-- Command Summary Table -->
+			<div class="table-responsive">
                 <table class="table table-striped">
                     <thead>
                         <tr>
@@ -102,17 +102,23 @@
                     </tbody>
                 </table>
             </div>
+			<!-- Main tutorial content -->
             <div class="row-fluid">
+				<!-- cp command -->
                 <p class="lh-2" style="margin-top: 25px;">
+					<h2>Basic File Changes</h2>
+					<p>
 					Sometimes you need to copy files from one directory to another. 
 					The 'cp' command accomplishes this task. The syntax is 
 					cp file1 file2. File1 is moved to the location specified in file2.
 					For instance 'cp text.txt stuff/text_files' will move file 
 					'text.txt' in the current directory to folder 'text_files' 
 					in subfolder 'stuff' of the current directory. 
+					</p>
 				</p>               
             </div>
             <div class="well" style="margin-top: 50px;">
+				<!-- cp example -->
                 <p>
 					Example of <b>cp</b> command with output below
 				</p>                
@@ -123,6 +129,7 @@
                 <code>text.txt</code><br />
             </div>
             <div class="row-fluid">
+				<!-- mv command - move files -->
                 <p class="lh-2" style="margin-top: 25px;">
 					Moving a file has a similar syntax. the 'mv file1 file2' moves 
 					the file specified to the location/path indicated. 'mv info.cfg 
@@ -131,6 +138,7 @@
 				</p>               
             </div> 
 			<div class="well" style="margin-top: 50px;">
+				<!-- mv example - move files -->
                 <p>
 					Examples of <b>mv</b> command
 				</p>                
@@ -145,6 +153,7 @@
 				<code>info.cfg</code><br />
             </div>
 			<div class="row-fluid">
+				<!-- mv command - rename files-->
                 <p class="lh-2" style="margin-top: 25px;">
 					Another useful feature of mv is that it can rename files. 
 					The command 'mv old_stuff.txt new_stuff.txt' will rename old_stuff.
@@ -155,6 +164,7 @@
 				</p>               
             </div> 
 			<div class="well" style="margin-top: 50px;">
+				<!-- mv example - rename files-->
                 <p>
 					Example of <b>mv</b> command and output
 				</p>                
@@ -167,6 +177,7 @@
 				<code>extra.txt</code><br />
             </div>
 			<div class="row-fluid">
+				<!-- rm and rmdir commands -->
                 <p class="lh-2" style="margin-top: 25px;">
 					If you want to remove files or folders instead of moving them, 
 					you would use the 'rm' and 'rmdir' commands. 'rm' removes the 
@@ -176,6 +187,7 @@
 				</p>               
             </div> 
 			<div class="well" style="margin-top: 50px;">
+				<!-- rm and rmdir examples -->
                 <p>
 					Example of <b>rm</b> and <b>rmdir</b> command and output
 				</p>                
@@ -192,20 +204,28 @@
 				<code>apple.img</code><br />
             </div> 
 			<div class="row-fluid">
+				<!-- cat command -->
                 <p class="lh-2" style="margin-top: 25px;">
-					Occasionally, the terminal window becomes congested with 
-					output and information. A simple command to remember is 
-					'clear', which clears the terminal window. 
-					
-					This is useful 
-					to use in conjunction with commands that display the contents 
-					of files. 'cat' is the most basic of these commands. 'cat file_name' 
+					<h2>Displaying File Contents</h2>
+					<!-- CAT function-->
+					<p>
+					There are numerous commands to display file contents. 'cat' is 
+					the most basic of these commands. 'cat file_name' 
 					displays the contents of the specified file on screen, but only 
 					as much fits in the terminal window. Any extra text in simply 
 					not displayed. 
+					</p>
+					<!--Clear command-->
+					<p>
+					At this point, you may find that thethe terminal window is
+					becoming congested with information that you don't necessarily need.
+					output and information. A simple command to remember is 
+					'clear', which clears the terminal window. 
+					</p>
 				</p>               
             </div> 
 			<div class="well" style="margin-top: 50px;">
+				<!-- cat example-->
                 <p>
 					Example of <b>cat</b> command and output.
 					File 'hello_world.txt' contains the text 'Hello, World!'
@@ -216,18 +236,20 @@
 				<code>Hello, World!</code><br />
             </div>   
 			<div class="row-fluid">
+				<!-- advanced file reading commands -->
                 <p class="lh-2" style="margin-top: 25px;">
+					<!-- less command -->
 					A better command to display a whole file is 'less'. 'less' 
 					displays the specified file like 'cat' but writes the content 
 					onto the window a page at a time, parsing all of the content 
 					of a file. By pressing the space bar, you can go onto the next 
 					page. You can also press 'q' to quit reading.
-
+					<!-- head, tail commands -->
 					The 'head' and 'tail' commands display the first and last 10 
 					lines of the specified file respectively. These are used where 
 					you only want to see header or footer information in a document
 					, such as a title(s) or citation information.
-
+					<!-- less command - search functionality -->
 					The 'less' command can also be used to search a file for a keyword 
 					(literal matching pattern). For instance, after inputting 'less stuff.txt', 
 					press forward slash ' / ' and then the word you wish to search for. 
@@ -236,6 +258,7 @@
 				</p>               
             </div> 
 			<div class="well" style="margin-top: 50px;">
+				<!-- less example -->
                 <p>
 					Example of <b>less</b> command and output
 				</p>                
@@ -253,7 +276,11 @@
 				<code>Something different! Blah blah blah filler text  blah filler text</code><br />
             </div> 
 			<div class="row-fluid">
+				<!-- GREP and WC-->
                 <p class="lh-2" style="margin-top: 25px;">
+					<h2> GREP and WC</h2>
+					<!-- Grep Command -->
+					<p>
 					A more powerful command to search for keywords is 'grep'. Grep searches 
 					for specified words or patterns from the specified file. for instance, 
 					'grep math stuff.txt' searches for the word 'math' within file 'stuff.txt'. 
@@ -263,13 +290,18 @@
 					less. Other options besides '-i' are '-v', which returns lines that DON'T 
 					Match, '-n' which return line numbers along with the matching lines and '-c' 
 					which only returns the total number of matched lines.
+					</p>
 
+					<!-- wc command -->
+					<p>
 					Another useful command is 'wc' which returns the total word count of a file. 
 					'wc -w' returns the word count of a file, while 'wc -l' returns the line count 
 					of a file.'wc' returns the word, line and character count of a file.
+					</p>
 				</p>               
             </div> 
 			<div class="well" style="margin-top: 50px;">
+				<!-- example of wc -->
                 <p>
 					Example of <b>wc</b> command and output
 				</p>   

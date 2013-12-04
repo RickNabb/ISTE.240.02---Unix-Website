@@ -54,7 +54,8 @@
 	
         <div class="span8">
             <h2>Beginner Unix User Guide <small>For those with little experience</small></h2>
-            <div class="table-responsive">
+            <!-- Command Summary Table -->
+			<div class="table-responsive">
                 <table class="table table-striped">
                     <thead>
                         <tr>
@@ -82,22 +83,32 @@
                     </tbody>
                 </table>
             </div>
+			<!-- Main tutorial content -->
             <div class="row-fluid">
+				<!-- Intro, ls command -->
                 <p class="lh-2" style="margin-top: 25px;">
+					<h2>Welcome to UNIX!</h2>
+					<p>
+					Time to dive right in!
+					</p>
+					
+					<p>
 					After booting up a computer running Unix, go to the applications 
-					menu and click terminal. You should see a % and a blinking 
+					menu and click terminal. You should see a $ and a blinking 
 					rectangle next to it. This is where your commands are typed. 
 					When you log in, you're automatically put in your home directory. 
 					To display information about your current directory, type 'ls' 
 					and press enter. The contents of your home directory, non-hidden 
-					files and directories, will be printed on the line(s) below '% ls'.
+					files and directories, will be printed on the line(s) below '$ ls'.
 					It is important to remember that ls by itself only shows 
 					NON-hidden files and folders (Those without "." as the first 
 					character in their name). To display all files and folders, 
 					type 'ls -a'. The 'ls -1' can also be used to display 1 
 					result per line.
+					</p>
 				</p>               
             </div>
+			<!-- ls example -->
             <div class="well" style="margin-top: 50px;">
                 <p>
 					Example of <b>ls</b> command with output below
@@ -109,8 +120,11 @@
                 <code>someFile.txt</code><br />
 				<code>stuff</code><br />
             </div>
+			<!-- cd command -->
             <div class="row-fluid">
                 <p class="lh-2" style="margin-top: 25px;">
+					<h2>The Basics</h2>
+					<p>
 					Now that you have an idea of where you are, you can move to 
 					another directory by type ' cd directory_name '. For instance, 
 					if there is a subfolder called ' stuff ' within your current 
@@ -119,8 +133,10 @@
 					(the one above your current directory) type ' cp .. '. 
 					For future reference one-dot/period ' . ' means your current working directory, 
 					while two-dots/periods ' .. ' means the parent directory. 
+					</p>
 				</p>               
             </div> 
+			<!-- cd example -->
 			<div class="well" style="margin-top: 50px;">
                 <p>
 					Examples of <b>cd</b> command
@@ -130,6 +146,7 @@
                 <code>$ cd stuff/sub_stuff/sub_sub_stuff</code><br />
 				<code>$ cd ../super_stuff/stuff/sub_stuff</code><br />
             </div>
+			<!-- pwd command -->
 			<div class="row-fluid">
                 <p class="lh-2" style="margin-top: 25px;">
 					It's easy to get lost while traversing through your file-system. 
@@ -139,6 +156,7 @@
 					'pwd' would print '/stuff/home/IT' or something along those lines.
 				</p>               
             </div> 
+			<!-- pwd exmaple -->
 			<div class="well" style="margin-top: 50px;">
                 <p>
 					Example of <b>pwd</b> command and output
@@ -146,16 +164,21 @@
                 <code>$ pwd</code><br />
 				<code>/stuff/home/IT</code><br />
             </div>
+			<!-- mkdir command -->
 			<div class="row-fluid">
                 <p class="lh-2" style="margin-top: 25px;">
+					<h2>Making New Directories</h2>
+					<p>
 					Making a new directory is very simple. The mkdir accomplishes
 					this task. 'mkdir test' will create a new directory 'test' in the 
 					current working directory. A bit of a side note: ~ is another 
 					way of stating 'home directory'. So, 'mkdir ~/test' will make 
 					a new directory 'test' in your home directory, no matter where 
 					your current working directory is.
+					</p>
 				</p>               
             </div> 
+			<!-- mkdir example -->
 			<div class="well" style="margin-top: 50px;">
                 <p>
 					Example of <b>mkdir</b> command and output
@@ -169,6 +192,7 @@
 				<code>stuff</code><br />
 				<code>test</code><br />
             </div>
+			<!-- ';' usage, finding out command functionality -->
 			<div class="row-fluid">
                 <p class="lh-2" style="margin-top: 25px;">
 					<h2>Additonal Notes</h2>
