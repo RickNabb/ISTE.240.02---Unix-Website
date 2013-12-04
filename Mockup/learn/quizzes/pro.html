@@ -54,77 +54,96 @@
         <div class="span8">
             <h2>Pro Unix Quiz <small>Test your knowledge</small></h2>
             <div class="clear50"></div>
-            <h6>Which command can change the permissions on a file?</h6>
+
+            <h6>What series of commands would search the entire file directory underneath and including the current folder for files with the extension *.txt, print them to a file called ‘allTextFiles.dat’, and then mail the contents of that file to the email address ‘test@example.com’ with a subject of “All Text Files”?</h6>
             <div class="radio">
-	            <label>
-		            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-			            chgper
-	            </label>
+                <label>
+                    <input type="radio" name="optionsRadios" id="Radio1" value="option1">
+                       ls -R *.txt > allTextFiles.dat | mail -s ‘All Text Files’ test@example.com < allTestFiles.dat
+
+                </label>
             </div>
             <div class="radio">
-	            <label>
-		            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-			            chaccess
-	            </label>
+                <label>
+                    <input type="radio" name="optionsRadios" id="Radio2" value="option2">
+                        ls -R | grep .txt > allTextFiles.dat; mail -c ‘All Text Files’ test@example.com > allTestFiles.dat
+
+                </label>
             </div>
             <div class="radio">
-	            <label>
-		            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-			            chmod
-	            </label>
+                <label>
+                    <input type="radio" name="optionsRadios" id="Radio3" value="option3">
+                        ls -R | grep .txt < allTextFiles.dat | mail -s ‘All Text Files’ test@example.com > allTestFiles.dat
+                </label>
             </div>
             <div class="radio">
-	            <label>
-		            <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
-			            chper
-	            </label>
+                <label>
+                    <input type="radio" name="optionsRadios" id="Radio4" class="correct" value="option4">
+                        ls -R | grep .txt > allTextFiles.dat; mail -s ‘All Text Files’ test@example.com < allTestFiles.dat
+                </label>
+            </div>
+
+
+            <div class="clear25"></div>
+
+            <h6>What is the proper command to set the command ‘doSomething’ to list the *.txt files of a directory and all subsequent subdirectories?
+            </h6>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios2" id="Radio1" value="option1">
+                        set doSomething = ’dir -a -.txt’
+
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios2" id="Radio2" class="correct" value="option2">
+                        alias doSomething = ‘ls -R | grep .txt’
+
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios2" id="Radio3" value="option3">
+                        set doSomething = ‘ls -R *.txt’
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios2" id="Radio4" value="option4">
+                        alias doSomething = ‘dir -a | grep .txt’
+                </label>
             </div>
 
             <div class="clear25"></div>
 
-            <h6>When changing the permissions on a file, ‘a’, ‘u’, ‘g’, and ‘o’ mean (respectively):</h6>
+            <h6>How would I see if my friend, whose username is “buddy1234” is logged into the same Unix system I am by using a search command?</h6>
             <div class="radio">
-	            <label>
-		            <input type="radio" name="optionsRadios2" id="Radio1" value="option1">
-			            actual, uncommon, group, others
+                <label>
+                    <input type="radio" name="optionsRadios3" id="Radio1" value="option1">
+                        ls -user ‘buddy1234’
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios3" id="Radio2" class="correct" value="option2">
+                        w | grep buddy1234
 
-	            </label>
+                </label>
             </div>
             <div class="radio">
-	            <label>
-		            <input type="radio" name="optionsRadios2" id="Radio2" value="option2">
-			            action, ungroup, group, opposite
-
-	            </label>
+                <label>
+                    <input type="radio" name="optionsRadios3" id="Radio3" value="option3">
+                        u | match buddy1234
+                </label>
             </div>
             <div class="radio">
-	            <label>
-		            <input type="radio" name="optionsRadios2" id="Radio3" value="option3">
-			            all users, ungroup, group, others
-	            </label>
-            </div>
-            <div class="radio">
-	            <label>
-		            <input type="radio" name="optionsRadios2" id="Radio4" value="option4">
-			            all users, owner, group, others
-	            </label>
+                <label>
+                    <input type="radio" name="optionsRadios3" id="Radio4" value="option4">
+                        net -user ‘buddy1234’
+                </label>
             </div>
 
-            <div class="clear25"></div>
-
-            <h6>The default mask for most Unix systems is 0022.</h6>
-            <div class="radio">
-	            <label>
-		            <input type="radio" name="optionsRadios3" id="Radio5" value="option1">
-			            True
-	            </label>
-            </div>
-            <div class="radio">
-	            <label>
-		            <input type="radio" name="optionsRadios3" id="Radio6" value="option2">
-			            False
-	            </label>
-            </div>
         </div>
     </div>
 </body>
