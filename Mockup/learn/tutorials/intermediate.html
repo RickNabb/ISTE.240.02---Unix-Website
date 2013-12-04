@@ -79,6 +79,26 @@
                             <td>rmdir</td>
                             <td>Permanently delete directory</td>
                         </tr>
+						<tr>
+                            <td>clear</td>
+                            <td>Clear terminal window display</td>
+                        </tr>
+						<tr>
+                            <td>cat</td>
+                            <td>Display contents of file</td>
+                        </tr>
+						<tr>
+                            <td>less</td>
+                            <td>Display contents of fie in a paged format, additional options to search/display contents of file</td>
+                        </tr>
+						<tr>
+                            <td>grep</td>
+                            <td>Search file contents for certain patterns. Very powerful.</td>
+                        </tr>
+						<tr>
+                            <td>wc</td>
+                            <td>Display line, word and character count of file, ability to display some or all of these.</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -170,7 +190,104 @@
 				<code>$ rmdir test</code><br />
 				<code>$ ls -1</code><br />
 				<code>apple.img</code><br />
-            </div>               
+            </div> 
+			<div class="row-fluid">
+                <p class="lh-2" style="margin-top: 25px;">
+					Occasionally, the terminal window becomes congested with 
+					output and information. A simple command to remember is 
+					'clear', which clears the terminal window. 
+					
+					This is useful 
+					to use in conjunction with commands that display the contents 
+					of files. 'cat' is the most basic of these commands. 'cat file_name' 
+					displays the contents of the specified file on screen, but only 
+					as much fits in the terminal window. Any extra text in simply 
+					not displayed. 
+				</p>               
+            </div> 
+			<div class="well" style="margin-top: 50px;">
+                <p>
+					Example of <b>cat</b> command and output.
+					File 'hello_world.txt' contains the text 'Hello, World!'
+				</p>                
+                <code>$ ls -1</code><br />
+				<code>hello_world.txt</code><br />
+				<code>$ cat hello_world.txt</code><br />
+				<code>Hello, World!</code><br />
+            </div>   
+			<div class="row-fluid">
+                <p class="lh-2" style="margin-top: 25px;">
+					A better command to display a whole file is 'less'. 'less' 
+					displays the specified file like 'cat' but writes the content 
+					onto the window a page at a time, parsing all of the content 
+					of a file. By pressing the space bar, you can go onto the next 
+					page. You can also press 'q' to quit reading.
+
+					The 'head' and 'tail' commands display the first and last 10 
+					lines of the specified file respectively. These are used where 
+					you only want to see header or footer information in a document
+					, such as a title(s) or citation information.
+
+					The 'less' command can also be used to search a file for a keyword 
+					(literal matching pattern). For instance, after inputting 'less stuff.txt', 
+					press forward slash ' / ' and then the word you wish to search for. 
+					So: 'less stuff.txt' and then '/math' would search stuff.txt for 'math'. 
+					Press 'n' to search for the next occurrence of the word.
+				</p>               
+            </div> 
+			<div class="well" style="margin-top: 50px;">
+                <p>
+					Example of <b>less</b> command and output
+				</p>                
+                <code>$ ls -1</code><br />
+				<code>hello_world_v2.txt</code><br />
+				<code>$ less hello_world_v2.txt</code><br />
+				<code>Hello, World! Blah blah blah filler text  blah filler text</code><br />
+				<code>Hello, World! Blah blah blah filler text  blah filler text</code><br />
+				<code>Hello, World! Blah blah blah filler text  blah filler text</code><br />
+				<code>Hello, World! Blah blah blah filler text  blah filler text</code><br />
+				<code>Hello, World! Blah blah blah filler text  blah filler text</code><br />
+				<code>Something different! Blah blah blah filler text  blah filler text</code><br />
+				
+				<p>After typing '/Something'</p>
+				<code>Something different! Blah blah blah filler text  blah filler text</code><br />
+            </div> 
+			<div class="row-fluid">
+                <p class="lh-2" style="margin-top: 25px;">
+					A more powerful command to search for keywords is 'grep'. Grep searches 
+					for specified words or patterns from the specified file. for instance, 
+					'grep math stuff.txt' searches for the word 'math' within file 'stuff.txt'. 
+					It is important to note that grep is case sensitive. In the above example, 
+					grep will return matching instances of 'math' but NOT 'Math' or 'MATH', etc. 
+					'grep -i' performs a case-INsensitive search. Grep is much more flexible then 
+					less. Other options besides '-i' are '-v', which returns lines that DON'T 
+					Match, '-n' which return line numbers along with the matching lines and '-c' 
+					which only returns the total number of matched lines.
+
+					Another useful command is 'wc' which returns the total word count of a file. 
+					'wc -w' returns the word count of a file, while 'wc -l' returns the line count 
+					of a file.'wc' returns the word, line and character count of a file.
+				</p>               
+            </div> 
+			<div class="well" style="margin-top: 50px;">
+                <p>
+					Example of <b>wc</b> command and output
+				</p>   
+				<code>$ ls -1</code><br />
+				<code>hello_world.txt</code><br />
+				<code>hello_world_v2.txt</code><br />
+				<code>$ less hello_world.txt</code><br />
+				<code>Hello, World!</code><br />
+				<code>$ wc hello_world.txt</code><br />
+				<code>1  2  13  hello_world.txt</code><br />
+				<p>1 = Lines</p>
+				<p>2 = Words</p>
+				<p>13 = Characters</p>
+				<code>$ wc hello_world.txt hello_world_v2.txt</code><br />
+				<code>1   2    13    hello_world.txt</code><br />
+				<code>30  175  1000  hello_world_v2.txt</code><br />
+				<code>31  172  1013  total</code><br />
+            </div>   
         </div>
     </div>
     <div class="row-fluid">
