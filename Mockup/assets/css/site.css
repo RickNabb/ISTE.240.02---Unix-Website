@@ -192,6 +192,11 @@
         margin-left: 10px;
     }
 
+    .clear25{
+        position: relative;
+        height: 25px;
+    }
+
         /*
     #console_clear {
         height: 300px;
