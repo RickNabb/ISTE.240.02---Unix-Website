@@ -193,8 +193,11 @@
     }
 
     .clear25{
-        position: relative;
-        height: 25px;
+        margin-top: 25px;
+    }
+
+    .clear50{
+        margin-top: 50px;
     }
 
         /*
