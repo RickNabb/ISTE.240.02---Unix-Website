@@ -17,12 +17,28 @@
         -ms-transition: all 200ms linear;
         transition: all 200ms linear;    
     }
-    #header{
+
+    #header ul{
         position: relative;
-        margin: 0;
-        width: 80%;
-        height: 150px;
-        left: 10%;
+        margin: 110px 0 0 0;
+        padding: 0;
+    }
+
+    #header li{
+        position: relative;
+        margin: 0 2px 0 0;
+        padding: 0;
+        display: inline;
+        font-size: 10pt;
+    }
+    #header img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #curPage{
+        color: black;
     }
     .separator {
         width: 80%;
@@ -33,54 +49,13 @@
         margin-bottom: 20px;
     }
 
-    .centerBlock {
-        margin: auto;
-        width: 50%;
-        height: 200px;
-        min-width: 50%;
-        min-height: 100px;
-    } 
-
-    .centerBlock img{
-        min-height: 100px
-    }
+   
     .nav_icon {
         display: inline-block;
         height: 25px;
         width: 25px;
         background-size: 25px 25px;
         margin-right: 10px;
-    }
-
-    .left_nav{
-        display: inline-block;
-        float: left;
-        position: relative;
-        margin: 0;
-        padding: 0;
-        left: 0px;
-        width: 315px;
-        top: 50%;
-		font-size: 16px;
-    }
-
-    .left_nav li{
-        float: left;
-    }
-
-    .right_nav{
-        display: inline-block;
-        float: right;
-        position: relative;
-        margin: 0;
-        padding: 0;
-        width:  315px; 
-        top: 50%;  
-        font-size: 16px;		
-    }
-
-    .right_nav li{
-        float: right;
     }
 
     #nav_home {
@@ -100,24 +75,34 @@
     }
 }
 
-@media screen and (max-width: 1100px) { 
-
+@media screen and (max-width: 910px) {
+    #header ul{
+        margin-top: 50px;
+    } 
     #header li{
-        font-size: 14px;
+        display: list-item;
     }
-    
-    .centerBlock {
-        position: relative;
-        top: 35px;
+}
+
+@media screen and (max-width: 767px) {
+    #header ul{
+        margin-top: 0px;
+        float: none !important;
+        position: absolute;
+
     }
-	
-	.left_nav {
-		width: 200px;
-		font-size: 12px;
-	}
-	
-	.right_nav {
-		width: 200px;
-		font-size: 12px;
-	}
+    #header #left{
+        top: 130px;
+    }
+    #header #right{
+        right: 0px;
+    }
+    #header li{
+        display: inline;
+        margin-right: 5px;
+    }
+    #header img{
+        height: 100px;
+        margin: auto;
+    }
 }
