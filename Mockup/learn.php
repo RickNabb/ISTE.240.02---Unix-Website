@@ -11,6 +11,7 @@
 </head>
 
 <body>
+<!--These is the icons that are consistent throughout the site-->
     <!--div id="header" class='row-fluid'>
         <div class="span3 offset1">
             <ul id="left">
@@ -35,7 +36,7 @@
     ?>
 
     <div class="separator"></div>
-	
+	<!--Tutorials and quiz links to learn information/test yourself-->
     <div id="content" class="row-fluid span10">
 	
 		<div class="pull-left well" >
@@ -55,7 +56,7 @@
 				<li><a href="learn/quizzes/pro.html">Pro</a></li>
 			</ol>
 		</div>
-	
+	<!--Information about the tutorials and quizzes-->	
         <div class="span8">
             <h2>Learn Unix</h2>
             <p>
