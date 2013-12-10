@@ -19,7 +19,7 @@
     
 
     <div id="content" class="row-fluid span10">
-    
+    <!--links for tutorials-->
         <div class="pull-left well" >
             <h2>Tutorials</h2>
             <ol>
@@ -31,6 +31,7 @@
             <div class="separator"></div>
             <h2 style="margin-top: 50px;">Quizzes</h2>
             <ol>
+            <!--links for quizzes-->
                 <li><a href="beginner.html">Beginner</a></li>
                 <li><a href="intermediate.html">Intermediate</a></li>
                 <li><a href="advanced.html">Advanced</a></li>
@@ -39,6 +40,7 @@
         </div>
 	
         <div class="span8">
+        <!--Beginner quiz questions-->
             <h2>Beginner Unix Quiz <small>Test your knowledge</small></h2>
             
             <h4 class='clear50'>What the command displays information about your current directory?</h4>
