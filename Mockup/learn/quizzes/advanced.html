@@ -56,9 +56,10 @@
 
 
             <h4 class='clear50'>If I wanted to write a file called output.txt from the Unix shell, line-by-line, which command would I use?</h4>
+			<form>
             <div class="radio">
                 <label>
-                    <input type="radio" name="optionsRadios4" id="Radio1" class="correct" value="option1">
+                    <input type="radio" name="optionsRadios4" id="Radio1" value="correct">
                         cat > output.txt
 
                 </label>
@@ -87,7 +88,7 @@
             <h4 class="clear25">How would you go about writing messages to that friends console window?</h4>
             <div class="radio">
                 <label>
-                    <input type="radio" name="optionsRadios5" id="Radio1" class="correct" value="option1">
+                    <input type="radio" name="optionsRadios5" id="Radio1" value="correct">
                         write buddy1234 [tty]
 
                 </label>
@@ -137,7 +138,7 @@
             </div>
             <div class="radio">
                 <label>
-                    <input type="radio" name="optionsRadios6" id="Radio4" class="!!" value="option4">
+                    <input type="radio" name="optionsRadios6" id="Radio4" value="correct">
                         !!
                 </label>
             </div>
@@ -153,7 +154,7 @@
             </div>
             <div class="radio">
                 <label>
-                    <input type="radio" name="optionsRadios7" id="Radio2" class="correct" value="option2">
+                    <input type="radio" name="optionsRadios7" id="Radio2" value="correct">
                         ps
 
                 </label>
@@ -175,7 +176,7 @@
             <h4 class="clear25">Whats one way to print the first line of a text file?</h4>
             <div class="radio">
                 <label>
-                    <input type="radio" name="optionsRadios8" id="Radio1" class="correct" value="option1">
+                    <input type="radio" name="optionsRadios8" id="Radio1" value="correct">
                         head -1 file.txt
 
                 </label>
@@ -210,7 +211,7 @@
             </div>
             <div class="radio">
                 <label>
-                    <input type="radio" name="optionsRadios9" id="Radio2" class="correct" value="option2">
+                    <input type="radio" name="optionsRadios9" id="Radio2" value="correct">
                         tar -zxvf file.tar.gz
 
                 </label>
@@ -227,10 +228,14 @@
                         tar -xqpf file.tar.gz
                 </label>
             </div>
-
-            <button type="submit" class="clear25 btn btn-primary">
+			
+			<h4 id="results" style="margin-top: 30px"></h4>
+			
+            <button type="button" class="clear25 btn btn-primary" onclick="validateQuestions()">
                <p style="margin-bottom: 0;  ">Submit</p>
             </button>
+			
+			</form>
 
         </div>
     </div>

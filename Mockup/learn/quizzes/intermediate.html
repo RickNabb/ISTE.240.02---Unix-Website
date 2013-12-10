@@ -55,6 +55,7 @@
         <div class="span8">
             <h2>Intermediate Unix Quiz <small>Test your knowledge</small></h2>
             <h4 class="clear50">Which command can change the permissions on a file?</h4>
+			<form>
             <div class="radio">
 	            <label>
 		            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
@@ -69,7 +70,7 @@
             </div>
             <div class="radio">
 	            <label>
-		            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+		            <input type="radio" name="optionsRadios" id="optionsRadios3" value="correct">
 			            chmod
 	            </label>
             </div>
@@ -104,7 +105,7 @@
             </div>
             <div class="radio">
 	            <label>
-		            <input type="radio" name="optionsRadios2" id="Radio4" value="option4">
+		            <input type="radio" name="optionsRadios2" id="Radio4" value="correct">
 			            all users, owner, group, others
 	            </label>
             </div>
@@ -113,7 +114,7 @@
             <h4 class="clear25">The default mask for most Unix systems is 0022.</h4>
             <div class="radio">
 	            <label>
-		            <input type="radio" name="optionsRadios3" id="Radio5" value="option1">
+		            <input type="radio" name="optionsRadios3" id="Radio5" value="correct">
 			            True
 	            </label>
             </div>
@@ -123,10 +124,26 @@
 			            False
 	            </label>
             </div>
+			<div class="radio">
+	            <label>
+		            <input type="radio" name="optionsRadios3" id="Radio5" value="option3">
+			            None of the Above?!
+	            </label>
+            </div>
+            <div class="radio">
+	            <label>
+		            <input type="radio" name="optionsRadios3" id="Radio4" value="option4">
+			            I'm really confused...
+	            </label>
+            </div>
             
-            <button type="submit" class="clear25 btn btn-primary">
+            <h4 id="results" style="margin-top: 30px"></h4>
+			
+            <button type="button" class="clear25 btn btn-primary" onclick="validateQuestions()">
                <p style="margin-bottom: 0;  ">Submit</p>
             </button>
+			
+			</form>
 
         </div>
     </div>
