@@ -37,7 +37,7 @@
         margin-right: auto;
     }
 
-    #curPage{
+    .curPage{
         color: black;
     }
     .separator {

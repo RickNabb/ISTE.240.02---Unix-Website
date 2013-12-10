@@ -1,7 +1,7 @@
 <script>
 <?php
         
-    	$dir    = '../../Sites/';
+    	$dir    = './';
 		$files1 = scandir($dir);
         $singleString = implode(' | ',$files1);
 ?>

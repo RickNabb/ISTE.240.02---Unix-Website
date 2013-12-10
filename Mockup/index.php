@@ -24,7 +24,7 @@
             });
         }
     </script>
-	<?php include('include_head.php'); ?>
+	<?php include('include/include_head.php'); ?>
 </head>
 
 <body onload="init();">
@@ -59,7 +59,7 @@
 
     <div id="index_content" class="row-fluid">
         <div id="icons" class="row">
-            <a href="learn.html" >
+            <a href="learn.php" >
                 <div class="span2 offset2 ">
                     <div class="icon_background green">
                         <div class="icon" id="unix"></div>
@@ -68,7 +68,7 @@
                 </div>
             </a>
             
-            <a href="history.html">
+            <a href="history.php">
                 <div class="span2 offset1">
                     <div class="icon_background blue">
                         <div class="icon" id="history"></div>
@@ -77,7 +77,7 @@
                 </div>
             </a>
 
-            <a href="about.html">
+            <a href="about.php">
                 <div class="span2 offset1">
                     <div class="icon_background purple">
                         <div class="icon" id="about"></div>
