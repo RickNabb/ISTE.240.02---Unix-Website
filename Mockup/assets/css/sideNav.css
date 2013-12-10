@@ -1,0 +1,94 @@
+.sideNav_trigger {
+  width: 75px;
+  height: 75px;
+  background-image: url(../images/sideNav_trigger.png);
+  position: fixed; }
+
+.sideNav_trigger.active {
+  background-image: url(../images/sideNav_trigger_active.png); }
+
+.sideNav {
+  background-color: #3d9ad1;
+  font-size: 16px;
+  color: white;
+  height: 100%;
+  position: fixed;
+  left: -150px;
+  top: 0;
+  z-index: 5;
+  width: 150px;
+  -webkit-transition: all 0.3s;
+  -moz-tansition: all 0.3s;
+  -ms-tansition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+  .sideNav ul {
+    margin-top: 100px;
+    margin-left: 30px; }
+    .sideNav ul li {
+      margin-bottom: 100px; }
+    .sideNav ul li:hover p {
+      opacity: 1; }
+    .sideNav ul li.current p {
+      opacity: 1; }
+    .sideNav ul li p {
+      margin-top: -40px;
+      text-align: center;
+      width: 80px;
+      color: #000;
+      opacity: 0; }
+    .sideNav ul a.icon_background {
+      opacity: 0;
+      border: 5px solid white;
+      background-color: rgba(0, 0, 0, 0);
+      position: relative;
+      width: 110px;
+      height: 110px;
+      display: block;
+      margin-top: -40px;
+      margin-left: -20px;
+      box-shadow: none; }
+    .sideNav ul a.icon_background:hover {
+      opacity: 1; }
+    .sideNav ul .icon {
+      background-size: 80px 80px;
+      width: 80px;
+      height: 80px;
+      opacity: 1;
+      background-position-y: 10px; }
+    .sideNav ul .current:hover > a {
+      cursor: default; }
+    .sideNav ul .current > a {
+      opacity: 1; }
+    .sideNav ul li:last-child {
+      margin-bottom: 0px; }
+
+.subNav {
+  background-color: #0969a2; }
+
+.navIcon {
+  color: white;
+  -webkit-transition: all 0.3s;
+  -moz-tansition: all 0.3s;
+  -ms-tansition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.menu_open {
+  left: 0; }
+
+.menu_peek {
+  left: -130px; }
+
+/* Icons */
+.home_icon {
+  background-image: url(../images/iconmonstr-home-4-icon.png); }
+
+.unix_icon {
+  background-image: url(../images/iconmonstr-window-command-icon.png); }
+
+.about_icon {
+  background-image: url(../images/iconmonstr-user-14-icon.png); }
+
+.history_icon {
+  background-image: url(../images/iconmonstr-book-17-icon.png); }
