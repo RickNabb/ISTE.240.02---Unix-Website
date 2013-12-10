@@ -20,7 +20,7 @@
     
 
     <div id="content" class="row-fluid span10">
-    
+    <!--links for tutorials-->
         <div class="pull-left well" >
             <h2>Tutorials</h2>
             <ol>
@@ -32,6 +32,7 @@
             <div class="separator"></div>
             <h2 style="margin-top: 50px;">Quizzes</h2>
             <ol>
+            <!--links for quizzes-->
                 <li><a href="beginner.html">Beginner</a></li>
                 <li><a href="intermediate.html">Intermediate</a></li>
                 <li><a href="advanced.html">Advanced</a></li>
@@ -39,7 +40,8 @@
             </ol>
         </div>
 	
-        <div class="span8">
+        <div class="span8"> 
+        <!--Intermidate quiz questions-->
             <h2>Intermediate Unix Quiz <small>Test your knowledge</small></h2>
             <h4 class="clear50">Which command can change the permissions on a file?</h4>
             <div class="radio">
@@ -68,7 +70,7 @@
             </div>
 
 
-            <h4 class="clear25">When changing the permissions on a file, ‘a’, ‘u’, ‘g’, and ‘o’ mean (respectively):</h4>
+            <h4 class="clear25">When changing the permissions on a file, ï¿½aï¿½, ï¿½uï¿½, ï¿½gï¿½, and ï¿½oï¿½ mean (respectively):</h4>
             <div class="radio">
 	            <label>
 		            <input type="radio" name="optionsRadios2" id="Radio1" value="option1">
