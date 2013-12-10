@@ -11,6 +11,7 @@
 </head>
 
 <body>
+<!--These is the icons that are consistent throughout the site-->
     <!--div id="header" class='row-fluid'>
         <div class="span3 offset1">
             <ul id="left">
@@ -35,7 +36,7 @@
     ?>
 
     <div class="separator"></div>
-
+<!--Information about the history of unix-->
     <div id="content" class="row-fluid">
         <div class="span10 offset1">
             <h2>The History of Unix</h2>
