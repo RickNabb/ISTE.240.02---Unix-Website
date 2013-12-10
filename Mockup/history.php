@@ -30,6 +30,7 @@
     </div-->
     <?php 
         $thisPage="history"; 
+        $direct="."; 
         include('include/header.php');
     ?>
 

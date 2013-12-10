@@ -29,7 +29,8 @@
         </div>
     </div-->
     <?php 
-        $thisPage="learn"; 
+        $thisPage="learn";
+        $direct="."; 
         include('include/header.php');
     ?>
 

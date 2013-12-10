@@ -31,6 +31,7 @@
     </div-->
     <?php 
         $thisPage="about"; 
+        $direct="."; 
         include('include/header.php');
     ?>
 
