@@ -18,9 +18,9 @@
 <div class="sideNav_trigger" id="sideNav_trigger"></div>
 <div class="sideNav" id="sideNav">
 	<ul>
-		<li class="home_icon icon"><a href="index.html" class="icon_background"></a><p>Home</p></li>            
-		<li class="unix_icon icon"><a href="learn.html" class="icon_background"></a><p>Unix</p></li>
-		<li class="history_icon icon"><a href="history.html" class="icon_background"></a><p>History</p></li>
+		<li class="home_icon icon"><a href="index.php" class="icon_background"></a><p>Home</p></li>            
+		<li class="unix_icon icon"><a href="learn.php" class="icon_background"></a><p>Unix</p></li>
+		<li class="history_icon icon"><a href="history.php" class="icon_background"></a><p>History</p></li>
 		<li class="about_icon icon current"><a href="#" class="icon_background"></a><p>About</p></li>
 	</ul>        
 </div>
@@ -28,8 +28,8 @@
     <!--div id="header" class='row-fluid'>
         <div class="span3 offset1">
             <ul id="left">
-                <li><a href="index.html"><div class="nav_icon" id="nav_home"></div>Home</a></li>
-                <li><a href="learn.html"><div class="nav_icon" id="nav_learn_unix"></div>Learn Unix</a></li>
+                <li><a href="index.php"><div class="nav_icon" id="nav_home"></div>Home</a></li>
+                <li><a href="learn.php"><div class="nav_icon" id="nav_learn_unix"></div>Learn Unix</a></li>
             </ul>     
         </div>
         <div class="span4">
@@ -37,7 +37,7 @@
         </div>
         <div class="span3">
             <ul id="right" style="float: right;">
-                <li><a href="about.html"> <div class="nav_icon" id="nav_about_us"></div>About Us</a></li>
+                <li><a href="about.php"> <div class="nav_icon" id="nav_about_us"></div>About Us</a></li>
                 <li><a href="#" class="curPage"><div class="nav_icon" id="nav_about_unix"></div>About Unix </a></li>       
             </ul> 
         </div>

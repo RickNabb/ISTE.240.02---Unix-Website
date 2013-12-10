@@ -42,15 +42,15 @@
     <div id="header" class="row-fluid">
 	    <div class="offset1 span5" style="width: 320px;">
             <ul class="nav-pills">
-                <li class=""><a href="index.html"><div class="nav_icon" id="nav_home"></div>Home</a></li>
-                <li><a href="learn.html"><div class="nav_icon" id="nav_learn_unix"></div>Learn Unix</a></li>        
+                <li class=""><a href="index.php"><div class="nav_icon" id="nav_home"></div>Home</a></li>
+                <li><a href="learn.php"><div class="nav_icon" id="nav_learn_unix"></div>Learn Unix</a></li>        
             </ul>
 	    </div>
         <div class="span1"><p class="title">Unix</p></div>
         <div class="span5 offset1" style="width: 340px;">
             <ul class="nav-pills">
-                <li><a href="history.html"><div class="nav_icon" id="nav_about_unix"></div>About Unix</a></li>
-                <li><a href="about.html"><div class="nav_icon" id="nav_about_us"></div>About Us</a></li>        
+                <li><a href="history.php"><div class="nav_icon" id="nav_about_unix"></div>About Unix</a></li>
+                <li><a href="about.php"><div class="nav_icon" id="nav_about_us"></div>About Us</a></li>        
             </ul>
 	    </div>
     </div>

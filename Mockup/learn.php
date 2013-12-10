@@ -19,8 +19,8 @@
     <!--div id="header" class='row-fluid'>
         <div class="span3 offset1">
             <ul id="left">
-                <li><a href="index.html"><div class="nav_icon" id="nav_home"></div>Home</a></li>
-                <li><a href="learn.html"><div class="nav_icon" id="nav_learn_unix"></div>Learn Unix</a></li>
+                <li><a href="index.php"><div class="nav_icon" id="nav_home"></div>Home</a></li>
+                <li><a href="learn.php"><div class="nav_icon" id="nav_learn_unix"></div>Learn Unix</a></li>
             </ul>     
         </div>
         <div class="span4">
@@ -28,7 +28,7 @@
         </div>
         <div class="span3">
             <ul id="right" style="float: right;">
-                <li><a href="about.html"> <div class="nav_icon" id="nav_about_us"></div>About Us</a></li>
+                <li><a href="about.php"> <div class="nav_icon" id="nav_about_us"></div>About Us</a></li>
                 <li><a href="#" class="curPage"><div class="nav_icon" id="nav_about_unix"></div>About Unix </a></li>       
             </ul> 
         </div>
@@ -46,18 +46,18 @@
 		<div class="pull-left well" >
 			<h2>Tutorials</h2>
 			<ol>
-				<li><a href="learn/tutorials/beginner.html">Beginner</a></li>
-				<li><a href="learn/tutorials/intermediate.html">Intermediate</a></li>
-				<li><a href="learn/tutorials/advanced.html">Advanced</a></li>
-				<li><a href="learn/tutorials/pro.html">Pro</a></li>
+				<li><a href="learn/tutorials/beginner.php">Beginner</a></li>
+				<li><a href="learn/tutorials/intermediate.php">Intermediate</a></li>
+				<li><a href="learn/tutorials/advanced.php">Advanced</a></li>
+				<li><a href="learn/tutorials/pro.php">Pro</a></li>
 			</ol>
 			<div class="separator"></div>
 			<h2 style="margin-top: 50px;">Quizzes</h2>
 			<ol>
-				<li><a href="learn/quizzes/beginner.html">Beginner</a></li>
-				<li><a href="learn/quizzes/intermediate.html">Intermediate</a></li>
-				<li><a href="learn/quizzes/advanced.html">Advanced</a></li>
-				<li><a href="learn/quizzes/pro.html">Pro</a></li>
+				<li><a href="learn/quizzes/beginner.php">Beginner</a></li>
+				<li><a href="learn/quizzes/intermediate.php">Intermediate</a></li>
+				<li><a href="learn/quizzes/advanced.php">Advanced</a></li>
+				<li><a href="learn/quizzes/pro.php">Pro</a></li>
 			</ol>
 		</div>
 	<!--Information about the tutorials and quizzes-->	

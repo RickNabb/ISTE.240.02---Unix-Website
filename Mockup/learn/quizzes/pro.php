@@ -27,19 +27,19 @@
         <div class="pull-left well" >
             <h2>Tutorials</h2>
             <ol>
-                <li><a href="../tutorials/beginner.html">Beginner</a></li>
-                <li><a href="../tutorials/intermediate.html">Intermediate</a></li>
-                <li><a href="../tutorials/advanced.html">Advanced</a></li>
-                <li><a href="../tutorials/pro.html">Pro</a></li>
+                <li><a href="../tutorials/beginner.php">Beginner</a></li>
+                <li><a href="../tutorials/intermediate.php">Intermediate</a></li>
+                <li><a href="../tutorials/advanced.php">Advanced</a></li>
+                <li><a href="../tutorials/pro.php">Pro</a></li>
             </ol>
             <div class="separator"></div>
             <h2 style="margin-top: 50px;">Quizzes</h2>
             <ol>
             <!--links for quizzes-->
-                <li><a href="beginner.html">Beginner</a></li>
-                <li><a href="intermediate.html">Intermediate</a></li>
-                <li><a href="advanced.html">Advanced</a></li>
-                <li><a href="pro.html">Pro</a></li>
+                <li><a href="beginner.php">Beginner</a></li>
+                <li><a href="intermediate.php">Intermediate</a></li>
+                <li><a href="advanced.php">Advanced</a></li>
+                <li><a href="pro.php">Pro</a></li>
             </ol>
         </div>
 	
