@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Unix Survival Guide</title>
+     <link type="text/css" href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link type="text/css" href="../../assets/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link href="../../assets/css/site.css" type="text/css" rel="stylesheet"/>
+    <link href="../../assets/css/header.css" type="text/css" rel="stylesheet"/>
+	<script language="javascript" type="text/javascript" src="../../assets/scripts/validateQuizzes.js"></script>
+	<link href="../../assets/css/sideNav.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript" src="../../assets/scripts/sideNav.js"></script>
+</head>
+
+<body>
+    <div class="sideNav_trigger" id="sideNav_trigger"></div>
+	<div class="sideNav" id="sideNav">
+		<ul>
+			<li class="home_icon icon"><a href="../../index.html" class="icon_background"></a><p>Home</p></li>            
+			<li class="unix_icon icon current"><a href="#" class="icon_background"></a><p>Unix</p></li>
+			<li class="history_icon icon"><a href="../../history.html" class="icon_background"></a><p>History</p></li>
+			<li class="about_icon icon"><a href="../../about.html" class="icon_background"></a><p>About</p></li>
+		</ul>        
+	</div>
+    <div id="header" class='row-fluid'>
+		<img src='../../assets/images/logo_600.png'/>
+	</div>
+
+    <div class="separator clear50"></div>
+	
+    <div id="content" class="row-fluid span10 clear50">
+	
+		<div class="pull-left well" >
+            <h2>Tutorials</h2>
+            <ol>
+                <li><a href="../tutorials/beginner.html">Beginner</a></li>
+                <li><a href="../tutorials/intermediate.html">Intermediate</a></li>
+                <li><a href="../tutorials/advanced.html">Advanced</a></li>
+                <li><a href="../tutorials/pro.html">Pro</a></li>
+            </ol>
+            <div class="separator"></div>
+            <h2 style="margin-top: 50px;">Quizzes</h2>
+            <ol>
+                <li><a href="beginner.html">Beginner</a></li>
+                <li><a href="intermediate.html">Intermediate</a></li>
+                <li><a href="advanced.html">Advanced</a></li>
+                <li><a href="pro.html">Pro</a></li>
+            </ol>
+        </div>
+	
+        <div class="span8">
+            <h2>Advanced Unix Quiz <small>Test your knowledge</small></h2>
+
+
+            <h4 class='clear50'>If I wanted to write a file called output.txt from the Unix shell, line-by-line, which command would I use?</h4>
+			<form>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios4" id="Radio1" value="correct">
+                        cat > output.txt
+
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios4" id="Radio2" value="option2">
+                        cat < output.txt
+
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios4" id="Radio3" value="option3">
+                        cat stdin > output.txt
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios4" id="Radio4" value="option4">
+                        cat stdin < output.txt
+                </label>
+            </div>
+
+
+            <h4 class="clear25">How would you go about writing messages to that friends console window?</h4>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios5" id="Radio1" value="correct">
+                        write buddy1234 [tty]
+
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios5" id="Radio2" value="option2">
+                        write buddy1234 [message]
+
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios5" id="Radio3" value="option3">
+                        sendmsg buddy1234
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios5" id="Radio4" value="option4">
+                        msg buddy1234 [message]
+                </label>
+            </div>
+
+
+
+
+            <h4 class="clear25">Putting these two symbols next to each other in your command will insert the previous command to the current</h4>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios6" id="Radio1" value="option1">
+                        ^^
+
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios6" id="Radio2" value="option2">
+                        ++
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios6" id="Radio3" value="option3">
+                        **
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios6" id="Radio4" value="correct">
+                        !!
+                </label>
+            </div>
+
+
+            <h4 class="clear25">What command will tell me which processes are running?</h4>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios7" id="Radio1" value="option1">
+                        runprogs
+
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios7" id="Radio2" value="correct">
+                        ps
+
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios7" id="Radio3" value="option3">
+                        progs
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios7" id="Radio4" value="option4">
+                        mbs
+                </label>
+            </div>
+
+
+            <h4 class="clear25">Whats one way to print the first line of a text file?</h4>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios8" id="Radio1" value="correct">
+                        head -1 file.txt
+
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios8" id="Radio2" value="option2">
+                        hd -first file.txt
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios8" id="Radio3" value="option3">
+                        println -1 file.txt
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios8" id="Radio4" value="option4">
+                        echo | println -1 file.txt
+                </label>
+            </div>
+
+
+            <h4 class="clear25">How do you unzip a tar.gz file?</h4>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios9" id="Radio1" value="option1">
+                        tar -jvef file.tar.gz
+
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios9" id="Radio2" value="correct">
+                        tar -zxvf file.tar.gz
+
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios9" id="Radio3" value="option3">
+                        tar -arb file.tar.gz
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios9" id="Radio4" value="option4">
+                        tar -xqpf file.tar.gz
+                </label>
+            </div>
+			
+			<h4 id="results" style="margin-top: 30px"></h4>
+			
+            <button type="button" class="clear25 btn btn-primary" onclick="validateQuestions()">
+               <p style="margin-bottom: 0;  ">Submit</p>
+            </button>
+			
+			</form>
+
+        </div>
+    </div>
+	<script>
+		new sideNav(document.getElementById("sideNav"));
+	</script>
+</body>
+
+</html>

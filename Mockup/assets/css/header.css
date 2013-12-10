@@ -1,0 +1,104 @@
+@media screen and (max-width: 2980px) {
+
+    .logo {
+        /*font-size: 100px;
+        text-align: center;
+        margin-top: 20px;*/
+        background-image: url(../images/logo_600.png);
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 5px;
+        height: 200px;
+        width: 600px;
+
+        -webkit-transition: all 200ms linear;
+        -moz-transition: all 200ms linear;
+        -o-transition: all 200ms linear;
+        -ms-transition: all 200ms linear;
+        transition: all 200ms linear;    
+    }
+
+    #header ul{
+        position: relative;
+        margin: 110px 0 0 0;
+        padding: 0;
+    }
+
+    #header li{
+        position: relative;
+        margin: 0 2px 0 0;
+        padding: 0;
+        display: inline;
+        font-size: 10pt;
+    }
+    #header img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #curPage{
+        color: black;
+    }
+    .separator {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-top: solid 1px #EEEEEE;
+        border-bottom: solid 1px #DDDDDD;
+        margin-bottom: 20px;
+    }
+
+   
+    .nav_icon {
+        display: inline-block;
+        height: 25px;
+        width: 25px;
+        background-size: 25px 25px;
+        margin-right: 10px;
+    }
+
+    #nav_home {
+        background-image: url(../images/iconmonstr-home-4-icon.png);
+    }
+
+    #nav_learn_unix {
+        background-image: url(../images/iconmonstr-window-command-icon.png);
+    }
+
+    #nav_about_unix {
+        background-image: url(../images/iconmonstr-book-17-icon.png);
+    }
+
+    #nav_about_us {
+        background-image: url(../images/iconmonstr-user-14-icon.png);
+    }
+}
+
+@media screen and (max-width: 910px) {
+    #header ul{
+        margin-top: 50px;
+    } 
+    #header li{
+        display: list-item;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #header ul{
+        margin-top: 0px;
+        float: none !important;
+        position: absolute;
+
+    }
+    #header #left{
+        top: 130px;
+    }
+    #header #right{
+        right: 0px;
+    }
+    #header li{
+        display: inline;
+        margin-right: 5px;
+    }
+}

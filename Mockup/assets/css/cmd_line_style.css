@@ -1,0 +1,108 @@
+#cmd_line {
+		height:177px;
+		position:fixed;
+		background-color:black;
+		width:100%;
+		left:0px;
+		color:white;
+		box-shadow:0px 0px 10px black;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+		z-index:1000;
+	}
+	#cmd_line p {
+		margin:0px;
+	}
+	#cmd_line_open {
+		height:100px;
+	}
+	#txt {
+		background-color: black;
+		color:white;
+		bottom:0px;
+		border:none;
+		width:94%;
+		margin-left:5px;
+	}
+	#cmd_line_p_content p {
+		margin:0;
+		line-height:16px;
+	}
+	#cmd_line_p_content {
+		height:141px;
+        border-bottom:1px solid lightgray;
+		overflow:auto;
+		margin-bottom:5px;
+	}
+	#cmd_line_show {
+		background-color:black;
+		border:2px solid lightgray;
+		height:50px;
+		width:50px;
+		position:fixed;
+		border-top:none;
+		right:15px;
+		box-shadow:0px 0px 5px black;
+		border-top-left-radius:10px;
+		border-top-right-radius:10px;
+		cursor:pointer;
+	}
+	#cmd_line_invisible {
+		top:30px;
+	}
+	#cmd_line_show:hover {
+		background-color:white;
+		box-shadow:0px 0px 10px black;
+	}
+    #tabbed {
+        text-indent:30px;
+    }
+	.invisible {
+		bottom:-178px;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+	
+	}
+	.shown {
+		bottom:0px;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+	}
+	.collapsed {
+		bottom:0px;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+	}
+	.expanded {
+		bottom:180px;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+	}
+    .collapse-empty{
+        width:100%;
+        height:0px;
+        -webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+    }
+    .expand-empty {
+        width:100%;
+        height:200px;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+        
+    }
+	

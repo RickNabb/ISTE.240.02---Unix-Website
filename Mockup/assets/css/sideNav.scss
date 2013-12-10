@@ -1,0 +1,147 @@
+$blue: #00214D;
+$font-size: 16px;
+$mainColor: #3d9ad1;
+$monoColor_dark: #0969A2;
+$monoColor_light: #64a8d1;
+$complementColor: #FF8CC0;
+$bar_width: 150px;
+$bar_opener_width: 75px;
+$icon_width: 80px;
+
+@mixin smooth_transition($duration){
+	-webkit-transition: all $duration;
+	-moz-tansition: all $duration;
+	-ms-tansition: all $duration;
+	-o-transition: all $duration;
+	transition: all $duration;
+}
+
+@mixin bottom_shadow($color){
+	box-shadow: 0px 4px 4px $color;
+	-webkit-box-shadow: 0px 4px 4px $color;
+	-moz-box-shadow: 0px 4px 4px $color;
+	-o-box-shadow: 0px 4px 4px $color;
+	-ms-box-shadow: 0px 4px 4px $color;
+}
+
+.sideNav_trigger{
+	width: $bar_opener_width;
+	height: $bar_opener_width;
+	background-image: url(../images/sideNav_trigger.png);
+	position: fixed;
+}
+
+.sideNav_trigger.active{
+		background-image: url(../images/sideNav_trigger_active.png);
+}
+
+.sideNav {
+    background-color: $mainColor;
+    font-size: $font-size;
+	color: white;
+	height: 100%;
+	position: fixed;
+	left: -$bar_width;
+	top: 0;
+	z-index: 5;
+	width: $bar_width;
+	@include smooth_transition(0.3s);
+	
+	ul{
+		margin-top: 100px;
+		margin-left: 30px;
+		
+		li{
+			margin-bottom: 100px;
+		}
+		
+		li:hover p{
+			opacity: 1;
+		}
+		
+		li.current p{
+			opacity: 1;
+		}
+		
+		li p{
+			margin-top: -40px;
+			text-align: center;
+			width: $icon_width;
+			color: #000;
+			opacity: 0;
+		}
+	
+		a.icon_background{
+			opacity: 0;
+			border: 5px solid white;
+			background-color: rgba(0,0,0,0);
+			position: relative;
+			width: $icon_width + 30;
+			height: $icon_width + 30;			
+			display: block;
+			margin-top: -40px;
+			margin-left: -20px;
+			box-shadow: none;
+		}
+
+		a.icon_background:hover {
+			opacity: 1;			
+		}		
+		
+		.icon {
+			background-size: $icon_width $icon_width;
+			width: $icon_width;
+			height: $icon_width;
+			opacity: 1;
+			background-position-y: 10px;
+		}
+		
+		.current:hover>a{
+			cursor: default;			
+		}
+		
+		.current>a{
+			opacity: 1;
+		}
+		
+		li:last-child{
+			margin-bottom: 0px;
+		}
+	}
+}
+
+
+.subNav{
+	background-color: $monoColor_dark;
+}
+
+.navIcon{
+	color: white;
+	@include smooth_transition(0.3s);
+}
+
+.menu_open{
+	left: 0;
+}
+
+.menu_peek{
+	left: -($bar_width - 20px);
+}
+
+/* Icons */
+
+.home_icon{
+	background-image: url(../images/iconmonstr-home-4-icon.png);
+}
+
+.unix_icon{
+	background-image: url(../images/iconmonstr-window-command-icon.png);
+}
+
+.about_icon{
+	background-image: url(../images/iconmonstr-user-14-icon.png);
+}
+
+.history_icon{
+	background-image: url(../images/iconmonstr-book-17-icon.png);
+}

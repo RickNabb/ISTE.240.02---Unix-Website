@@ -2,103 +2,67 @@
 <html lang="en">
 <head>
 	<title>Unix Survival Guide</title>
-    <link type="text/css" href="./assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link type="text/css" href="./assets/css/bootstrap-responsive.min.css" rel="stylesheet" />
-    <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
-
-    <style type="text/css">
-        * {
-            font-family: 'Oxygen', sans-serif;
-        }
-
-        li {
-            list-style: none;
-            margin-right: 30px;
-        }
-
-        .clear {
-            margin-bottom: 20px;
-            margin-top: 50px;
-        }
-
-        .title {
-            font-size: 70px;
-            text-align: center;
-        }
-
-        .separator {
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-            border-top: solid 1px #EEEEEE;
-            border-bottom: solid 1px #DDDDDD;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
-        #header {
-            margin-bottom: 50px;
-        }
-
-        .nav_icon {
-            display: inline-block;
-            height: 25px;
-            width: 25px;
-            background-size: 25px 25px;
-            margin-right: 10px;
-        }
-
-        #nav_home {
-            background-image: url(./assets/images/iconmonstr-home-4-icon.png);
-        }
-
-        #nav_learn_unix {
-            background-image: url(./assets/images/iconmonstr-window-command-icon.png);
-        }
-
-        #nav_about_unix {
-            background-image: url(./assets/images/iconmonstr-book-17-icon.png);
-        }
-
-        #nav_about_us {
-            background-image: url(./assets/images/iconmonstr-user-14-icon.png);
-        }
-    </style>
+	<link type="text/css" href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link type="text/css" href="./assets/css/bootstrap-responsive.min.css" rel="stylesheet" />
+	<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+	<link href="./assets/css/site.css" type="text/css" rel="stylesheet"/>
+	<link href="./assets/css/header.css" type="text/css" rel="stylesheet"/>
+	<link href="./assets/css/sideNav.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript" src="./assets/scripts/sideNav.js"></script>
 </head>
 
 <body>
-    <div class="clear"></div>
-    <div id="header" class="row-fluid">
-	    <div class="offset1 span5" style="width: 320px;">
-            <ul class="nav-pills">
-                <li class=""><a href="javascript:void(0);"><div class="nav_icon" id="nav_home"></div>Home</a></li>
-                <li><a href="javascript:void(0);"><div class="nav_icon" id="nav_learn_unix"></div>Learn Unix</a></li>        
-            </ul>
-	    </div>
-        <div class="span1"><p class="title">Unix</p></div>
-        <div class="span5 offset1" style="width: 340px;">
-            <ul class="nav-pills">
-                <li><a href="javascript:void(0);"><div class="nav_icon" id="nav_about_unix"></div>About Unix</a></li>
-                <li><a href="javascript:void(0);"><div class="nav_icon" id="nav_about_us"></div>About Us</a></li>        
-            </ul>
-	    </div>
-    </div>
+    
+	<div class="sideNav_trigger" id="sideNav_trigger"></div>
+	<div class="sideNav" id="sideNav">
+		<ul>
+			<li class="home_icon icon"><a href="index.html" class="icon_background"></a><p>Home</p></li>            
+			<li class="unix_icon icon"><a href="learn.html" class="icon_background"></a><p>Unix</p></li>
+			<li class="history_icon icon"><a href="history.html" class="icon_background"></a><p>History</p></li>
+			<li class="about_icon icon current"><a href="#" class="icon_background"></a><p>About</p></li>
+		</ul>        
+	</div>
+	<div id="header" class='row-fluid'>
+		<img src='./assets/images/logo_600.png'/>
+	</div>
 
-    <div class="separator"></div>
-
-    <div id="content" class="row-fluid">
-        <div class="span10 offset1">
-            <p>
-                Swearem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam scelerisque accumsan nisl, a mattis eros vestibulum et. Vestibulum placerat purus bollix nibh aliquam fringilla. Aenean et tortor diam, id tempor asshole. Vivamus sagittis ornare tempor. Nullam lacinia metus vel jizz fuck et consequat turd porttitor. Vestibulum twathole pellentesque jizzmopper. Sed faucibus venenatis accumsan. Quisque ut gravida metus. Nam sed neque magna, in fermentum ligula. Praesent a diam tincidunt odio semper consequat.
-            </p>
-            <p>
-                Phasellus aliquam justo at arcu gravida porttitor. Duis interdum nisi vitae enim rutrum in viverra dui consectetur. Mauris id purus dui. Integer id ante sem. Nullam commodo mollis turpis eu ornare. Integer eu dolor urna. Curabitur sit amet nulla erat. Quisque bugger arcu nisl, ac semper diam. Nunc rhoncus ante enim. Donec at blandit nunc. Phasellus eu lectus augue, cock amet ornare leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam twat eros dui. Curabitur in wee mauris, nec ornare turpis. Morbi porttitor, nisl et posuere dick, nulla orci bastard ante, nec scelerisque leo sem at turpis. Aenean ornare minge eu magna feugiat id poo purus fermentum. Sed leo dolor, aliquam et venenatis vitae, dignissim lobortis justo. Praesent molestie felis bollix odio ultricies cursus. Poo cursus, nisl vitae elementum turd, nibh urna cursus nisi, eget volutpat erat arcu sed cock.
-            </p>
-            <p>
-                Proin pellentesque poo asshole massa scelerisque sodales nec non velit. Vestibulum auctor sagittis scelerisque. Morbi sed lorem et odio sagittis pretium euismod sed augue. Ut non lobortis purus. Integer tempus hendrerit poo feugiat auctor. Motherfucker convallis imperdiet nunc nec feugiat. In hac habitasse platea dictumst. Vestibulum vehicula bibendum arcu, id accumsan tellus fucker nec. Ut jizzmopper dignissim adipiscing. Nullam id magna vel nunc sodales laoreet. Aenean sit amet tellus metus, non mattis dui.
-            </p>
+    <div class="separator clear50"></div>
+	
+    <div id="content" class="row-fluid span10 clear50">
+            <div class="span4 offset2">
+                <h3>Nicholas Rabb</h3>
+                <img src='assets/images/nick.jpg'/>
+                <p>
+                    2nd year Computer Science major, from Fairport, New York.
+                </p>
+                <h3>Thomas Boyle</h3>
+                <img src='assets/images/tj.jpg'/>
+                <p>
+                    3rd year Information Technology major, from northern New Jersey.
+                </p>
+            </div>
+            <div class="span4">
+                <h3>Ben Valentino</h3>
+                <img src='assets/images/ben.jpg'/>
+                <p>
+                    3rd year Information Technology major, from Los Angeles, California.
+                </p>
+                <h3>Ryan Montgomery</h3>
+                <img src='assets/images/ryan.jpg'/>
+                <p>
+                    3rd year Information Technology major, from Manhasset, New York.
+                </p>
+            </div>
+            <div class='span4 offset4'>
+                <h3>Jessica Kellner</h3>
+                <img src='assets/images/jess.jpg'/>
+                <p>
+                   3rd year Information Technology major, from Honeoye Falls, New York.
+                </p>
+            </div>
         </div>
-    </div>
-</body>
-
+    </body>
+	<script>
+		new sideNav(document.getElementById("sideNav"));
+	</script>
 </html>
