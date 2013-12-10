@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<!--This is the icons that are consistent throughout the site-->
+<!--These is the icons that are consistent throughout the site-->
     <!--div id="header" class='row-fluid'>
         <div class="span3 offset1">
             <ul id="left">
