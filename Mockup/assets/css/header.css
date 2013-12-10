@@ -37,7 +37,7 @@
         margin-right: auto;
     }
 
-    .curPage{
+    #curPage{
         color: black;
     }
     .separator {
@@ -100,9 +100,5 @@
     #header li{
         display: inline;
         margin-right: 5px;
-    }
-    #header img{
-        height: 100px;
-        margin: auto;
     }
 }

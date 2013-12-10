@@ -7,11 +7,22 @@
     <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
     <link href="./assets/css/site.css" type="text/css" rel="stylesheet"/>
     <link href="./assets/css/header.css" type="text/css" rel="stylesheet"/>
+	<link href="./assets/css/sideNav.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript" src="./assets/scripts/sideNav.js"></script>
 	<?php include('include_head.php'); ?>
 </head>
 
 <body onload="init();">
 <?php include('include/include_cmd.php'); ?>
+<div class="sideNav_trigger" id="sideNav_trigger"></div>
+<div class="sideNav" id="sideNav">
+	<ul>
+		<li class="home_icon icon"><a href="index.html" class="icon_background"></a><p>Home</p></li>            
+		<li class="unix_icon icon"><a href="learn.html" class="icon_background"></a><p>Unix</p></li>
+		<li class="history_icon icon current"><a href="#" class="icon_background"></a><p>History</p></li>
+		<li class="about_icon icon"><a href="about.html" class="icon_background"></a><p>About</p></li>
+	</ul>        
+</div>
 <!--These is the icons that are consistent throughout the site-->
     <!--div id="header" class='row-fluid'>
         <div class="span3 offset1">
@@ -36,9 +47,9 @@
         include('include/header.php');
     ?>
 
-    <div class="separator"></div>
+    <div class="separator clear50"></div>
 <!--Information about the history of unix-->
-    <div id="content" class="row-fluid">
+    <div id="content" class="row-fluid clear50">
         <div class="span10 offset1">
             <h2>The History of Unix</h2>
             <h4 class="clear25">Multics</h4>
@@ -67,6 +78,9 @@
         </div>
     </div>
 	<div id="collapse-div"></div>
+	<script>
+		new sideNav(document.getElementById("sideNav"));
+	</script>
 </body>
 
 </html>

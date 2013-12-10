@@ -7,6 +7,8 @@
     <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
     <link href="../../assets/css/site.css" type="text/css" rel="stylesheet"/>
     <link href="../../assets/css/header.css" type="text/css" rel="stylesheet"/>
+	<link href="../../assets/css/sideNav.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript" src="../../assets/scripts/sideNav.js"></script>
 	<?php include('include_head.php'); ?>
 </head>
 
@@ -17,11 +19,10 @@
         $direct="../"; 
         include('include/header.php');
     ?>
-
-    <div class="separator"></div>
-    
-
-    <div id="content" class="row-fluid span10">
+	<?php include('include/sideNav.php'); ?>
+    <div class="separator clear50"></div>
+	
+    <div id="content" class="row-fluid span10 clear50">
     
         <div class="pull-left well" >
             <h2>Tutorials</h2>
@@ -96,6 +97,9 @@
         <div class="clear100"></div>
     </div>
 	<div id="collapse-div"></div>
+	<script>
+		new sideNav(document.getElementById("sideNav"));
+	</script>
 </body>
 
 </html>

@@ -9,29 +9,27 @@
     <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
     <link href="../../assets/css/site.css" type="text/css" rel="stylesheet"/>
     <link href="../../assets/css/header.css" type="text/css" rel="stylesheet"/>
+	<link href="../../assets/css/sideNav.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript" src="../../assets/scripts/sideNav.js"></script>
 </head>
 
 <body>
+    <div class="sideNav_trigger" id="sideNav_trigger"></div>
+	<div class="sideNav" id="sideNav">
+		<ul>
+			<li class="home_icon icon"><a href="../../index.html" class="icon_background"></a><p>Home</p></li>            
+			<li class="unix_icon icon current"><a href="#" class="icon_background"></a><p>Unix</p></li>
+			<li class="history_icon icon"><a href="../../history.html" class="icon_background"></a><p>History</p></li>
+			<li class="about_icon icon"><a href="../../about.html" class="icon_background"></a><p>About</p></li>
+		</ul>        
+	</div>
     <div id="header" class='row-fluid'>
-        <div class="span3 offset1">
-            <ul id="left">
-                <li><a href="../../index.html"><div class="nav_icon" id="nav_home"></div>Home</a></li>
-                <li><a href="../../learn.html" id='curPage'><div class="nav_icon" id="nav_learn_unix"></div>Learn Unix</a></li>
-            </ul>     
-        </div>
-        <div class="span4">
-            <img src='../../assets/images/logo_600.png'/>
-        </div>
-        <div class="span3">
-            <ul id="right" style="float: right;">
-                <li><a href="../../about.html"> <div class="nav_icon" id="nav_about_us"></div>About Us</a></li>
-                <li><a href="../../learn.html"><div class="nav_icon" id="nav_about_unix"></div>About Unix </a></li>       
-            </ul> 
-        </div>
-    </div>
-    <div class="separator"></div>
+		<img src='../../assets/images/logo_600.png'/>
+	</div>
 
-    <div id="content" class="row-fluid span10">
+    <div class="separator clear50"></div>
+	
+    <div id="content" class="row-fluid span10 clear50">
         <div class="pull-left well" >
             <h2>Tutorials</h2>
             <ol>
@@ -328,6 +326,9 @@
     <div class="row-fluid">
         <div class="clear100"></div>
     </div>
+	<script>
+		new sideNav(document.getElementById("sideNav"));
+	</script>
 </body>
 
 </html>

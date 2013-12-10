@@ -7,11 +7,14 @@
     <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
     <link href="./assets/css/site.css" type="text/css" rel="stylesheet"/>
     <link href="./assets/css/header.css" type="text/css" rel="stylesheet"/>
+	<link href="./assets/css/sideNav.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript" src="./assets/scripts/sideNav.js"></script>
 	<?php include('include_head.php'); ?>
 </head>
 
 <body onload="init();">
 <?php include('include/include_cmd.php'); ?>
+<?php include('include/sideNav.php'); ?>
 <!--These is the icons that are consistent throughout the site-->
     <!--div id="header" class='row-fluid'>
         <div class="span3 offset1">
@@ -36,9 +39,9 @@
         include('include/header.php');
     ?>
 
-    <div class="separator"></div>
+    <div class="separator clear50"></div>
 	<!--Tutorials and quiz links to learn information/test yourself-->
-    <div id="content" class="row-fluid span10">
+    <div id="content" class="row-fluid span10 clear50">
 	
 		<div class="pull-left well" >
 			<h2>Tutorials</h2>
@@ -71,6 +74,9 @@
         </div>
     </div>
 	<div id="collapse-div"></div>
+	<script>
+		new sideNav(document.getElementById("sideNav"));
+	</script>
 </body>
 
 </html>
