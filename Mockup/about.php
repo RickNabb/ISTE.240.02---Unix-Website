@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+<!--This is the icons that are consistent throughout the site-->
     <!--div id="header" class='row-fluid'>
         <div class="span3 offset1">
             <ul id="left">
@@ -36,7 +36,7 @@
     ?>
 
     <div class="separator"></div>
-
+<!--Information about the sites creators-->
     <div id="content" class="row-fluid">
         <div class="span4 offset2">
             <h3>Nicholas Rabb</h3>
