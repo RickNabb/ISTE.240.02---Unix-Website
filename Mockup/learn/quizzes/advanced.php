@@ -19,7 +19,7 @@
 	
 
     <div id="content" class="row-fluid span10">
-	
+	<!--links for tutorials-->
 		<div class="pull-left well" >
             <h2>Tutorials</h2>
             <ol>
@@ -29,6 +29,7 @@
                 <li><a href="../tutorials/pro.html">Pro</a></li>
             </ol>
             <div class="separator"></div>
+            <!--links for quizzes-->
             <h2 style="margin-top: 50px;">Quizzes</h2>
             <ol>
                 <li><a href="beginner.html">Beginner</a></li>
@@ -39,6 +40,7 @@
         </div>
 	
         <div class="span8">
+        <!--Advanced unix quiz questions-->
             <h2>Advanced Unix Quiz <small>Test your knowledge</small></h2>
 
 
