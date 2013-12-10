@@ -55,6 +55,7 @@
 	    </div>
     </div>
 -->
+<!--styling and positioning for the site-->
     <div class="separator" style="margin-bottom: 50px;"></div>
 
     <div id="index_content" class="row-fluid">
