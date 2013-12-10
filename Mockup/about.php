@@ -67,7 +67,7 @@
             <h3>Ben Valentino</h3>
             <img src='assets/images/ben.jpg'/>
             <p>
-                3rd year Information Technology major, from Torrance, California.
+                3rd year Information Technology major, from Los Angeles, California.
             </p>
             <h3>Ryan Montgomery</h3>
             <img src='assets/images/ryan.jpg'/>
