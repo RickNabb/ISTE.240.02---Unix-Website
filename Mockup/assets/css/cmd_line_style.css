@@ -1,3 +1,4 @@
+/*Command line properties*/
 #cmd_line {
 		height:177px;
 		position:fixed;
@@ -17,6 +18,7 @@
 	#cmd_line_open {
 		height:100px;
 	}
+	/*Text properties*/
 	#txt {
 		background-color: black;
 		color:white;
@@ -25,6 +27,7 @@
 		width:95%;
 		margin-left:5px;
 	}
+	/*#cmd_line_p_content properties*/
 	#cmd_line_p_content p {
 		margin:0;
 		line-height:16px;
