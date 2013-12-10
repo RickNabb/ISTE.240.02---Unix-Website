@@ -7,6 +7,8 @@
     <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
     <link href="../../assets/css/site.css" type="text/css" rel="stylesheet"/>
     <link href="../../assets/css/header.css" type="text/css" rel="stylesheet"/>
+	<script language="javascript" type="text/javascript" src="../../assets/scripts/validateQuizzes.js"></script>
+	
 </head>
 
 <body>
@@ -53,28 +55,30 @@
         <div class="span8">
             <h2>Beginner Unix Quiz <small>Test your knowledge</small></h2>
             
+			
             <h4 class='clear50'>What the command displays information about your current directory?</h4>
-            <div class="radio">
+            <form>
+			<div class="radio">
 	            <label>
-		            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+		            <input type="radio" name="optionsRadios1" id="optionsRadios1" value="option1">
 			            cp
 	            </label>
             </div>
             <div class="radio">
 	            <label>
-		            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+		            <input type="radio" name="optionsRadios1" id="optionsRadios2" value="option2">
 			            /
 	            </label>
             </div>
             <div class="radio">
 	            <label>
-		            <input type="radio" name="optionsRadios" id="optionsRadios3" class="correct" value="option3">
+		            <input type="radio" name="optionsRadios1" id="optionsRadios3" value="correct">
 			            ls
 	            </label>
             </div>
             <div class="radio">
 	            <label>
-		            <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+		            <input type="radio" name="optionsRadios1" id="optionsRadios4" value="option4">
 			            pwd
 	            </label>
             </div>
@@ -103,7 +107,7 @@
             </div>
             <div class="radio">
 	            <label>
-		            <input type="radio" name="optionsRadios2" id="Radio4" class="correct"value="option4">
+		            <input type="radio" name="optionsRadios2" id="Radio4" value="correct">
 			            cd directory
 	            </label>
             </div>
@@ -112,7 +116,7 @@
             <h4 class="clear25">What is the command to make a new directory?</h4>
             <div class="radio">
                 <label>
-                    <input type="radio" name="optionsRadios3" id="Radio1" class="correct"value="option1">
+                    <input type="radio" name="optionsRadios3" id="Radio1" value="correct">
                          mkdir directory
 
                 </label>
@@ -148,7 +152,7 @@
             </div>
             <div class="radio">
                 <label>
-                    <input type="radio" name="optionsRadios4" id="Radio2" class="correct"value="option2">
+                    <input type="radio" name="optionsRadios4" id="Radio2" value="correct">
                         pwd
 
                 </label>
@@ -161,15 +165,20 @@
             </div>
             <div class="radio">
                 <label>
-                    <input type="radio" name="optionsRadios4" id="Radio4" class="correct"value="option4">
+                    <input type="radio" name="optionsRadios4" id="Radio4" value="option4">
                         mv directory
                 </label>
             </div>
-
-            
-            <button type="submit" class="clear25 btn btn-primary">
+			
+			<h4 id="results" style="margin-top: 30px"></h4>
+			
+            <button type="button" class="clear25 btn btn-primary" onclick="validateQuestions()">
                <p style="margin-bottom: 0;  ">Submit</p>
             </button>
+			
+			</form>
+			
+			
 
         </div>
     </div>
