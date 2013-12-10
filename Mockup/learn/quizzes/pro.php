@@ -47,71 +47,71 @@
         <!--Pro quiz questions-->
             <h2>Pro Unix Quiz <small>Test your knowledge</small></h2>
 
-            <h4 class="clear50">What series of commands would search the entire file directory underneath and including the current folder for files with the extension *.txt, print them to a file called �allTextFiles.dat�, and then mail the contents of that file to the email address �test@example.com� with a subject of �All Text Files�?</h4>
+            <h4 class="clear50">What series of commands would search the entire file directory underneath and including the current folder for files with the extension *.txt, print them to a file called 'allTextFiles.dat', and then mail the contents of that file to the email address 'test@example.com' with a subject of 'All Text Files'?</h4>
             <div class="radio">
                 <label>
                     <input type="radio" name="optionsRadios" id="Radio1" value="option1">
-                       ls -R *.txt > allTextFiles.dat | mail -s �All Text Files� test@example.com < allTestFiles.dat
+                       ls -R *.txt > allTextFiles.dat | mail -s 'All Text Files' test@example.com < allTestFiles.dat
 
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="optionsRadios" id="Radio2" value="option2">
-                        ls -R | grep .txt > allTextFiles.dat; mail -c �All Text Files� test@example.com > allTestFiles.dat
+                        ls -R | grep .txt > allTextFiles.dat; mail -c 'All Text Files' test@example.com > allTestFiles.dat
 
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="optionsRadios" id="Radio3" value="option3">
-                        ls -R | grep .txt < allTextFiles.dat | mail -s �All Text Files� test@example.com > allTestFiles.dat
+                        ls -R | grep .txt < allTextFiles.dat | mail -s 'All Text Files' test@example.com > allTestFiles.dat
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="optionsRadios" id="Radio4" class="correct" value="option4">
-                        ls -R | grep .txt > allTextFiles.dat; mail -s �All Text Files� test@example.com < allTestFiles.dat
+                        ls -R | grep .txt > allTextFiles.dat; mail -s 'All Text Files' test@example.com < allTestFiles.dat
                 </label>
             </div>
 
 
 
-            <h4 class="clear25">What is the proper command to set the command �doSomething� to list the *.txt files of a directory and all subsequent subdirectories?
+            <h4 class="clear25">What is the proper command to set the command 'doSomething' to list the *.txt files of a directory and all subsequent subdirectories?
             </h4>
             <div class="radio">
                 <label>
                     <input type="radio" name="optionsRadios2" id="Radio1" value="option1">
-                        set doSomething = �dir -a -.txt�
+                        set doSomething = 'dir -a -.txt'
 
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="optionsRadios2" id="Radio2" class="correct" value="option2">
-                        alias doSomething = �ls -R | grep .txt�
+                        alias doSomething = 'ls -R | grep .txt'
 
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="optionsRadios2" id="Radio3" value="option3">
-                        set doSomething = �ls -R *.txt�
+                        set doSomething = 'ls -R *.txt'
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="optionsRadios2" id="Radio4" value="option4">
-                        alias doSomething = �dir -a | grep .txt�
+                        alias doSomething = 'dir -a | grep .txt'
                 </label>
             </div>
 
 
-            <h4 class="clear25">How would I see if my friend, whose username is �buddy1234� is logged into the same Unix system I am by using a search command?</h4>
+            <h4 class="clear25">How would I see if my friend, whose username is 'buddy1234' is logged into the same Unix system I am by using a search command?</h4>
             <div class="radio">
                 <label>
                     <input type="radio" name="optionsRadios3" id="Radio1" value="option1">
-                        ls -user �buddy1234�
+                        ls -user 'buddy1234'
                 </label>
             </div>
             <div class="radio">
@@ -130,7 +130,7 @@
             <div class="radio">
                 <label>
                     <input type="radio" name="optionsRadios3" id="Radio4" value="option4">
-                        net -user �buddy1234�
+                        net -user 'buddy1234'
                 </label>
             </div>
             <button type="submit" class="clear25 btn btn-primary">
