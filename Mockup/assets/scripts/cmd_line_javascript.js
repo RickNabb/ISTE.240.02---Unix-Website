@@ -1,6 +1,7 @@
 function init() {
 		if(localStorage.log)
 		{
+			console.log("here");
 			document.getElementById('cmd_line_p_content').innerHTML+= (localStorage.log);
 			var txtbox = document.getElementById('txt');
 			txtbox.focus();
@@ -53,6 +54,35 @@ function init() {
             txtbox.value='';
             txtbox.focus();
         }
+		else if(value.substring(0,8) =="checkin ")
+		{
+			var nameToSend = value.substring(8) +"";
+			$.ajax({
+			  type: "POST",
+			  url: "assets/scripts/insert.php",
+			  data: {"name":nameToSend},
+			});
+			console.log(nameToSend);
+			document.getElementById('cmd_line_p_content').innerHTML = ("<p> >$~ " + value+"</p>" + document.getElementById("cmd_line_p_content").innerHTML);
+			localStorage.log= document.getElementById('cmd_line_p_content').innerHTML;
+            txtbox.value='';
+            txtbox.focus();
+			
+		}
+		else if(value.substring(0,4)=="pull")
+		{
+			$.ajax({
+			type:"GET",
+			url:"assets/scripts/pull.php",
+			datatype:"html",
+			success:function(response){
+			document.getElementById('cmd_line_p_content').innerHTML= ("<p> >$~ "+value+" </p>"+ response +document.getElementById("cmd_line_p_content").innerHTML);
+			}
+			});
+			localStorage.log= document.getElementById('cmd_line_p_content').innerHTML;
+			txtbox.value='';
+    		txtbox.focus();
+		}
         else if(value.substring(0,3) == "man")
         {
             if(value.substring(4) =="pwd")
@@ -83,6 +113,20 @@ function init() {
     			txtbox.value='';
     			txtbox.focus();
             }
+			else if(value.substring(4) == "checkin")
+			{
+				document.getElementById('cmd_line_p_content').innerHTML= ("<p> >$~ "+value+" </p>"+"<p id=\"tabbed\">This is a non unix command added to add someone who wants to check in to the site.</p>" +document.getElementById("cmd_line_p_content").innerHTML);
+            	localStorage.log= document.getElementById('cmd_line_p_content').innerHTML;
+    			txtbox.value='';
+    			txtbox.focus();
+			}
+			else if(value.substring(4) == "pull")
+			{
+				document.getElementById('cmd_line_p_content').innerHTML= ("<p> >$~ "+value+" </p>"+"<p id=\"tabbed\">This is a non unix command added to see who checked into this site through the command line</p>" +document.getElementById("cmd_line_p_content").innerHTML);
+            	localStorage.log= document.getElementById('cmd_line_p_content').innerHTML;
+    			txtbox.value='';
+    			txtbox.focus();
+			}
             else
             {
                 document.getElementById('cmd_line_p_content').innerHTML= ("<p> >$~ "+value+" </p>"+"<p id=\"tabbed\">Command doesn't exist or hasn't been presented with a help description</p>" +document.getElementById("cmd_line_p_content").innerHTML);
@@ -93,7 +137,7 @@ function init() {
         }
         else if(value.substring(0,4) == "help")
         {
-            document.getElementById('cmd_line_p_content').innerHTML= ("<p> >$~ "+value+" </p>"+"<p id=\"tabbed\">List of usable Commands: pwd | ls | cd | wc | man | help</p>"+"<p id=\"tabbed\">For more help on each command, type \"man <command_name>\"</p>" +document.getElementById("cmd_line_p_content").innerHTML);
+            document.getElementById('cmd_line_p_content').innerHTML= ("<p> >$~ "+value+" </p>"+"<p id=\"tabbed\">List of usable Commands: pwd | ls | cd | wc | man | help | checkin | pull</p>"+"<p id=\"tabbed\">For more help on each command, type \"man \<command_name\>\"</p>" +document.getElementById("cmd_line_p_content").innerHTML);
             localStorage.log= document.getElementById('cmd_line_p_content').innerHTML;
     		txtbox.value='';
     		txtbox.focus();

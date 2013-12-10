@@ -1,4 +1,3 @@
-/*Command line properties*/
 #cmd_line {
 		height:177px;
 		position:fixed;
@@ -11,6 +10,7 @@
 		-moz-transition: all .5s ease-in-out;
 		-o-transition: all .5s ease-in-out;
 		transition: all .5s ease-in-out;
+		z-index:1000;
 	}
 	#cmd_line p {
 		margin:0px;
@@ -18,16 +18,14 @@
 	#cmd_line_open {
 		height:100px;
 	}
-	/*Text properties*/
 	#txt {
 		background-color: black;
 		color:white;
 		bottom:0px;
 		border:none;
-		width:95%;
+		width:94%;
 		margin-left:5px;
 	}
-	/*#cmd_line_p_content properties*/
 	#cmd_line_p_content p {
 		margin:0;
 		line-height:16px;
@@ -93,11 +91,18 @@
     .collapse-empty{
         width:100%;
         height:0px;
-        
+        -webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
     }
     .expand-empty {
         width:100%;
         height:200px;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
         
     }
 	
