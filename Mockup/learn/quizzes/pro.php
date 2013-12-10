@@ -7,9 +7,11 @@
     <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
     <link href="../../assets/css/site.css" type="text/css" rel="stylesheet"/>
     <link href="../../assets/css/header.css" type="text/css" rel="stylesheet"/>
+	<?php include('include_head.php'); ?>
 </head>
 
-<body>
+<body onload="init();">
+	<?php include('include/include_cmd.php'); ?>
     <?php 
         $thisPage="learn";
         $direct="../"; 
@@ -135,6 +137,7 @@
             </button>
         </div>
     </div>
+	<div id="collapse-div"></div>
 </body>
 
 </html>
